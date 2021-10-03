@@ -1042,6 +1042,18 @@ header nav #check {
   color: #505050;
 }
 
+.bg-productos .site-productos .content-busca-productos .show-carrito tr {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.bg-productos .site-productos .content-busca-productos .show-carrito tr td {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  height: 150px;
+  text-align: center;
+}
+
 .footer {
   color: whitesmoke;
   -webkit-box-sizing: border-box;
@@ -3246,5 +3258,71 @@ header nav #check {
     background-attachment: fixed;
     background-position: 50% 50%;
   }
+}
+
+.show-carrito .botones #botonClear {
+  margin: 5px;
+  background-color: rgba(151, 90, 85, 0.753);
+  padding: 10px 10px;
+  border: 2px solid rgba(153, 26, 26, 0.801);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.show-carrito .botones #botonSiguiente {
+  margin: 5px;
+  background-color: rgba(6, 168, 87, 0.753);
+  padding: 10px 10px;
+  border: 2px solid rgba(102, 226, 44, 0.801);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.container .section #dolar {
+  display: block;
+}
+
+.header-carrito .productosDesc {
+  width: 80%;
+  min-height: 70vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header-carrito .productosDesc .producto {
+  width: 100%;
+  margin: 15px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header-carrito .productosDesc .producto img {
+  margin-right: 10px;
+}
+
+.header-carrito .productosDesc .producto p {
+  margin-right: 10px;
+}
+
+.header-carrito .productosDesc .producto .deleteItem {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */

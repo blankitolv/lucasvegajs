@@ -782,6 +782,16 @@ header {
                 }
                 
             }
+            .show-carrito {
+                tr {
+                    transition:all 1s;
+                    td {
+                        transition:all 1s;
+                        height: 150px;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
@@ -2697,5 +2707,61 @@ header {
         background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
         background-attachment: fixed;
         background-position: 50% 50%;
+    }
+}
+.show-carrito{
+    .botones{
+        #botonClear {
+            margin:5px;
+            background-color: rgba(151, 90, 85, 0.753);
+            padding: 10px 10px;
+            border:2px solid rgba(153, 26, 26, 0.801);
+            border-radius:5px;
+            text-transform: uppercase;
+        }
+        #botonSiguiente{
+            margin:5px;
+            background-color: rgba(6, 168, 87, 0.753);
+            padding: 10px 10px;
+            border:2px solid rgba(102, 226, 44, 0.801);
+            border-radius:5px;
+            text-transform: uppercase;
+        }
+    }
+}
+.container {
+    .section {
+        #dolar{
+            display: block;
+        }
+    }
+}
+.header-carrito {
+    .productosDesc{
+        width: 80%;
+        min-height: 70vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .producto{
+            width: 100%;
+            margin: 15px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            img {
+                margin-right: 10px;
+            }
+            p {
+                margin-right: 10px;
+            }
+            .deleteItem {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        
+        }
     }
 }
