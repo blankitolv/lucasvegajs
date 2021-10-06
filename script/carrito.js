@@ -16,10 +16,13 @@ function muestraCliente(ventas){
           <img src="${element.imagen}" width=100>
           <p class="name">${element.titulo}</p>
           <p>$${element.precio}</p>
+          <input type="number" class="cantidad" name="cant" min="0" max="999" value="1">
           <button class="deleteItem"> x </button>
           `
           productosDesc.appendChild(divProductos);
      });
+     //actualiza el monto
+     actualizaMonto();
 }
 function actualizarLS(nombre){
      ventas=JSON.parse(localStorage.getItem('carrito'));
@@ -30,6 +33,8 @@ function actualizarLS(nombre){
           }
      });
      localStorage.setItem('carrito',JSON.stringify(ventasActualizadas));
+     //actualiza el monto
+     actualizaMonto();
 }
 //(1) se recibe como parametro el NOMBRE del articulo seleccionado (unProducto / string)
 //(2) se recibe todos los productos mostrados en el dom (listaProductos / HTML collections)
@@ -58,9 +63,53 @@ document.onreadystatechange = () => {
      }
 }
 
+function enviarCantidad(cantidad, nombre){
+     ventas=JSON.parse(localStorage.getItem('carrito'));
+     ventas.forEach(element => {
+          if (element.titulo==nombre){
+               console.log(typeof element.cant, typeof cantidad);
+               element.cant=cantidad;
+          }
+     });
+     localStorage.setItem('carrito',JSON.stringify(ventas));
+     console.log(localStorage.getItem('carrito'));
+     actualizaMonto();
+}
+//lee cantidades de productos
+document.onreadystatechange = () => {
+     if (document.readyState === 'complete') {
+          const inputcantidad=document.querySelectorAll('input')
+          inputcantidad.forEach(element => {
+               element.addEventListener('change',cantidad)
+               function cantidad(e){
+                    e.preventDefault();
+                    // console.log(typeof(this.value)); //string
+                    let nombreCantidad=(e.target.parentNode).querySelector('.name').textContent;
+                    // console.log(`${this.value} de ${nombreCantidad}`);
+                    enviarCantidad(Number (this.value),nombreCantidad)
+                    // luego buscar en el arreglo por nombre, modificar ventas.cantidad=cantidad
+                    // luego actualizar monto
+               }
+          });
+
+     }
+}
+
+//cantidad de productos
+function actualizaMonto(){
+     ventas=JSON.parse(localStorage.getItem('carrito'));
+     // console.log(ventas);
+     let aux=0;
+     ventas.forEach(element => {
+          aux+=element.precio*element.cant;
+     });
+     const etiquetaPrecio=document.querySelector('#precio');
+     etiquetaPrecio.innerHTML=`$${aux}`;
+}
+//si el LS no está vacío ni su tamaño es igual a 0
 if (localStorage.getItem("carrito")!=null && JSON.parse(localStorage.getItem('carrito')).length!=0){
      arrayVentas=JSON.parse(localStorage.getItem('carrito'));
-     console.log(JSON.parse(localStorage.getItem('carrito')).length);
+     //muestra las ventas
      muestraCliente(arrayVentas);
 } else {
      verificaDOM();
@@ -78,14 +127,6 @@ function verificaEmail (correo){
                     timer: 3000,
                   });
                   window.location.href = "./p404.html";
-               // swal({
-               //      title: "La compra a sido cargada",
-               //      text: "Gracias por su compra",
-               //      icon: "success",
-               //      buttons: false,
-               //      timer: 3000,
-               // });
-               // borrar LS
           } else {
                swal({
                     title: "Error",
