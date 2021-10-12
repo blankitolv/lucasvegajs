@@ -79,6 +79,32 @@ body {
                         }
                     }
                 }
+                p {
+                    padding: 0 4px;
+                    position: absolute;
+                    top:70%;
+                    left:5%;
+                    background-color:red;
+                    line-height: 25px;
+                    font-size: 15px;
+                    border-radius: 50%;
+                }
+                // #cantCarrito {
+                //     position: absolute;
+                //     width: 20px;
+                //     height: 20px;
+                //     line-height: 20px;
+                //     top:70%;
+                //     left:5%;
+                //     border-radius: 50%;
+                //     background-color: red;
+                //     display: flex;
+                //     text-align: center;
+                //     justify-content: center;
+                //     p{
+                //         font-size: 13px;
+                //     }
+                // }
             }
             &:hover {
                 transition: 3s;
@@ -783,12 +809,51 @@ header {
                 
             }
             .show-carrito {
+                display: flex;
+                width: 25%;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: space-around;
+                align-items: center;
+                background-color: rgba(241, 241, 241, 0.705);
                 tr {
                     transition:all 1s;
                     td {
                         transition:all 1s;
                         height: 150px;
                         text-align: center;
+                    }
+                }
+            }
+            .botones{
+                display:flex;
+                box-sizing: border-box;
+                #botonClear {
+                    transition: .5s all;
+                    margin:5px;
+                    background-color: rgba(151, 90, 85, 0.753);
+                    padding: 10px 10px;
+                    // border:2px solid rgba(153, 26, 26, 0.801);
+                    border:0px;
+                    border-radius:5px;
+                    text-transform: uppercase;
+                    &:hover {
+                        transition: .5s all;
+                        background-color: rgba(202, 126, 120, 0.753);
+                    }
+                }
+                #botonSiguiente{
+                    transition: .5s all;
+                    margin:5px;
+                    background-color: rgba(6, 168, 87, 0.753);
+                    padding: 10px 10px;
+                    border:0px;
+                    // border:2px solid rgba(102, 226, 44, 0.801);
+                    border-radius:5px;
+                    text-transform: uppercase;
+                    &:hover {
+                        transition: .5s all;
+                        background-color: rgba(23, 204, 114, 0.753);
                     }
                 }
             }
@@ -1461,6 +1526,7 @@ header {
         height: 100%;
         position: relative;
         .textura-carrito {
+            padding:1px;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -1494,6 +1560,23 @@ header {
                 overflow: hidden;
                 position: relative;
                 z-index:10;
+                h2 {
+                    margin: 40px auto;
+                    text-align:center;
+                    font-size: 20px;
+                    color:white;
+                }
+                p {
+                    margin: 10px auto;
+                    text-align:center;
+                    font-size: 17px;
+                    color:white;
+                    a {
+                        color:white;
+                        line-height: 30px;
+                        background-color: rgb(43, 82, 255);
+                    }
+                }
                 #formCarrito {
                     width: 400px;
                     height: 600px;
@@ -2709,26 +2792,7 @@ header {
         background-position: 50% 50%;
     }
 }
-.show-carrito{
-    .botones{
-        #botonClear {
-            margin:5px;
-            background-color: rgba(151, 90, 85, 0.753);
-            padding: 10px 10px;
-            border:2px solid rgba(153, 26, 26, 0.801);
-            border-radius:5px;
-            text-transform: uppercase;
-        }
-        #botonSiguiente{
-            margin:5px;
-            background-color: rgba(6, 168, 87, 0.753);
-            padding: 10px 10px;
-            border:2px solid rgba(102, 226, 44, 0.801);
-            border-radius:5px;
-            text-transform: uppercase;
-        }
-    }
-}
+
 .container {
     .section {
         #dolar{
@@ -2763,5 +2827,25 @@ header {
             }
         
         }
+    }
+}
+.card-body {
+    .card-text{
+        .leermas{
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+        span{
+            display:none;
+        }
+    }
+}
+.main-success{
+    width: 100%;
+    height: auto;
+    .container {
+        
     }
 }

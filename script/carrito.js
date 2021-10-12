@@ -1,3 +1,9 @@
+document.onreadystatechange = () => {
+     eventBorrar();
+     eventInputCantidad();
+     eventImages();
+}
+// si no hay elementos en el carrito, se muestra una leyenda "ups, su carrito se encuentra vacío"
 function verificaDOM(){
      if (JSON.parse(localStorage.getItem('carrito')).length==0){
           const productosDesc=document.querySelector('.productosDesc')
@@ -7,6 +13,7 @@ function verificaDOM(){
      }
 }
 
+//se reciben las venta y se muestran
 function muestraCliente(ventas){
      let productosDesc=document.querySelector('.productosDesc');
      ventas.forEach(element => {
@@ -21,9 +28,9 @@ function muestraCliente(ventas){
           `
           productosDesc.appendChild(divProductos);
      });
-     //actualiza el monto
      actualizaMonto();
 }
+
 function actualizarLS(nombre){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      const ventasActualizadas=[];
@@ -40,7 +47,7 @@ function actualizarLS(nombre){
 //(2) se recibe todos los productos mostrados en el dom (listaProductos / HTML collections)
 function borrarItem(unProducto,listaProductos){
      listaProductos.forEach(element => {
-          // como se recibe el botón, se busca al padre y del padre, el contenido del nombre
+          // como recibe el [botón], se busca el contenido del nombre del padre.
           if (unProducto == element.parentNode.querySelector('.name').textContent){
                // se borra la tarjeta
                element.parentNode.remove();
@@ -49,9 +56,11 @@ function borrarItem(unProducto,listaProductos){
      actualizarLS(unProducto);
      verificaDOM();
 }
-document.onreadystatechange = () => {
+//evento de borrar/eliminar articulo
+function eventBorrar(){
      if (document.readyState === 'complete') {
           let deleteItem=document.querySelectorAll('.deleteItem');
+          // console.log(deleteItem);
           deleteItem.forEach(element => {
                element.addEventListener('click',nombreItemBorrar)
                function nombreItemBorrar(e){
@@ -61,6 +70,21 @@ document.onreadystatechange = () => {
                }               
           });
      }
+}
+function eventInputCantidad(){
+     let inputcantidad=document.querySelectorAll('input')
+     inputcantidad.forEach(element => {
+          element.addEventListener('change',cantidad)
+          function cantidad(e){
+               e.preventDefault();
+               // console.log(typeof(this.value)); //string
+               let nombreCantidad=(e.target.parentNode).querySelector('.name').textContent;
+               console.log(`${this.value} de ${nombreCantidad}`);
+               enviarCantidad(Number (this.value),nombreCantidad)
+               // luego buscar en el arreglo por nombre, modificar ventas.cantidad=cantidad
+               // luego actualizar monto
+          }
+     });
 }
 
 function enviarCantidad(cantidad, nombre){
@@ -74,25 +98,6 @@ function enviarCantidad(cantidad, nombre){
      localStorage.setItem('carrito',JSON.stringify(ventas));
      console.log(localStorage.getItem('carrito'));
      actualizaMonto();
-}
-//lee cantidades de productos
-document.onreadystatechange = () => {
-     if (document.readyState === 'complete') {
-          const inputcantidad=document.querySelectorAll('input')
-          inputcantidad.forEach(element => {
-               element.addEventListener('change',cantidad)
-               function cantidad(e){
-                    e.preventDefault();
-                    // console.log(typeof(this.value)); //string
-                    let nombreCantidad=(e.target.parentNode).querySelector('.name').textContent;
-                    // console.log(`${this.value} de ${nombreCantidad}`);
-                    enviarCantidad(Number (this.value),nombreCantidad)
-                    // luego buscar en el arreglo por nombre, modificar ventas.cantidad=cantidad
-                    // luego actualizar monto
-               }
-          });
-
-     }
 }
 
 //cantidad de productos
@@ -162,6 +167,7 @@ function validacionDatos(){
           });
      }
 }
+
 enviar.addEventListener('click',validacion)
      function validacion(e) {
           e.preventDefault();

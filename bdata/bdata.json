@@ -3,450 +3,500 @@
           "id":"1",
           "imgSource":"../images/can-mia-var/cancioneros/c-CALAMARO.jpg",
           "titulo":"Calamaro",
-          "desc":"lorem10",
+          "desc":"Andrés Calamaro Masel es un cantautor, músico, compositor y productor discográfico argentino. Es considerado uno de los iconos del rock argentino por su actuación con <a href=\"#\" class=\"leermas\">Leer más</a> <span>Los Abuelos de la Nada y su prolífica carrera como solista, así como una figura influyente del rock español por su éxito con Los Rodríguez.​</span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"2",
           "imgSource":"../images/can-mia-var/cancioneros/c-DIVIDIDOS.jpg",
           "titulo":"Divididos",
-          "desc":"lorem10",
+          "desc":"Divididos es una banda argentina de rock, fundada en 1988 por Ricardo Mollo y Diego Arnedo, exintegrantes de MAM junto a Omar Mollo​y de Sumo, cuando esta se disolvió por la muerte de su líder, <a href=\"#\" class=\"leermas\">Leer más</a><span> Luca Prodan. En sus trabajos, han incursionado en estilos musicales locales como el folklore.​</span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"3",
           "imgSource":"../images/can-mia-var/cancioneros/c-INTOXICADOS.jpg",
           "titulo":"Intoxicados",
-          "desc":"lorem10",
+          "desc":"Intoxicados fue una banda de rock argentino formada en la ciudad de Buenos Aires. Surge a fines del año 2000, tras la separación de la banda Viejas Locas.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"4",
           "imgSource":"../images/can-mia-var/cancioneros/c-REDONDOS.jpg",
           "titulo":"Los Redondos",
-          "desc":"lorem10",
+          "desc":"Patricio Rey y sus Redonditos de Ricota, también conocidos como Los Redondos, fue una banda de rock argentina, formada en La Plata en 1976, e integrada, en su mayor parte, por el Indio Solari,<a href=\"#\" class=\"leermas\">Leer más</a><span> Skay Beilinson, Semilla Bucciarelli, Walter Sidotti y Sergio Dawi.</span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"5",
           "imgSource":"../images/can-mia-var/cancioneros/c-RODRIGUEZ.jpg",
           "titulo":"Silvio Rodriguez",
-          "desc":"lorem10",
+          "desc":"Silvio Rodríguez Domínguez es un cantautor, guitarrista y poeta cubano, exponente característico de la música de su país surgida con la Revolución cubana, conocida como la Nueva Trova, que comparte <a href=\"#\" class=\"leermas\">Leer más</a><span>con otros reconocidos cantautores tales como Pablo Milanés, Noel Nicola y Vicente Feliú.​</span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"6",
           "imgSource":"../images/can-mia-var/cancioneros/c-ROLINGAS1.jpg",
           "titulo":"Rolingas Y Chabones vol 1",
-          "desc":"lorem10",
+          "desc":"Un minuto (león gieco) <br> El fantasta (arbol <br> Homero (viejas locas) <br> Una nueva noche fria (callejeros) <br> No tengo ganas (intoxicados) <br> Descontrolado(jovenes pordioseros) <br> Brujerias (los tipitos) <br> <a href=\"#\" class=\"leermas\">Leer más</a><span> Sigue tu camino (decadentes) <br> Magia veneno (catupecu machu) <br> Solo voy (la 25) <br>Sin mi (Villanos) <br>Luna (Cielo Razzo) <br>El Viejo (La Vela Puerca) <br>Desearía (kapanga) <br>Si te vas (AirBag) <br>Arrancacorazones (Attaque 77) <br>Blues Para Caseros(Los Gardelitos) <br>Calavera (la mancha de rolando) <br>rock del pedazo (ratones paranoicos) </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"7",
           "imgSource":"../images/can-mia-var/cancioneros/c-ROLINGAS2.jpg",
           "titulo":"Rolingas Y Chabones vol 2",
-          "desc":"lorem10",
+          "desc":"La Mancha de Rolando - Jovene Pordioseros - Pier - El Bordo - Attaque 77 - Catupecu Machi - Estelares - Guasones - no te va gustar - cadena perpetua - Los tipitos - intoxicados - Callejos y más.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"8",
           "imgSource":"../images/can-mia-var/cancioneros/c-SODA.jpg",
           "titulo":"Soda Stereo",
-          "desc":"lorem10",
+          "desc":"Ella usí mi cabeza como un revólver - canción animal - cuando pase el temblor - lo que angra - Dietético - de musica ligera - Nada personal - porque no puedo ser del jet set - ecos - el rito - en la ciudad de la furia - <a href=\"#\" class=\"leermas\">Leer más</a><span> final caja negra - persiana americana - imágenes retro - juego de seducción - sobredosis de tv - tele-ka - te hacen falta vitaminas - te para tres - un millón de años luz </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"9",
           "imgSource":"../images/can-mia-var/cancioneros/c-SOLE.jpg",
           "titulo":"La sole",
-          "desc":"lorem10",
+          "desc":"A Don Ata - Achalay Tafí del Valle - Alma, Corazón y Vida - Pucón De Fiesta en Fiesta - Déjame que me Vaya - Enero - Entre a mi Pago sin Golpear - Kilómetro 11 - La del Norte Cordobés - La Omha - Libre - Luna Cautiva - Ódiame <a href=\"#\" class=\"leermas\">Leer más</a><span> - Propiedad Privada - Punta Cayastá - Que Nadie Sepa mi Sufrir - Sapo Cancionero - Tren del Cielo </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"10",
           "imgSource":"../images/can-mia-var/cancioneros/c-SOSA.jpg",
           "titulo":"Mercedes Sosa",
-          "desc":"lorem10",
+          "desc":"Alfonsina Y El Mar - Carito - Como La Cigarra - Como Pájaros En El Aire - Dale Alegría a Mi Corazón - Gracias A La Vida - La Maza - La Última Curda - María, María - María Va - Pedro Canoero - Razón De Vivir - Si Se Calla El Cantor <a href=\"#\" class=\"leermas\">Leer más</a><span> - Solo Le Pido A Dios - Todavía Cantamos - Todo Cambia - Un Son Para Portinari - Un Vestido Y Un Amor - Volver A Los Diecisiete - Yo Vengo A Ofrecer Mi Corazón </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"11",
           "imgSource":"../images/can-mia-var/cancioneros/c-SPINETTA.jpg",
           "titulo":"Luis Alberto Spinetta",
-          "desc":"lorem10",
+          "desc":"Seguir viviendo sin tu amor - Durazno Sangrando - Muchacha ojos de papel - El anillo del capitán Beto - Resumen Porteño - Barro Tal Vez - A esos hombres tristes - Alma de Diamante - Maribel se durmió - Cheques <a href=\"#\" class=\"leermas\">Leer más</a><span> - Los libros de la buena memoria - Plegaria para un niño dormido - Ella también - fermín - Todas las hojas son del viento - Para saber como es la soledad - Post Crucifixión - Que Ves el cielo - quedandote o yéndote - sexo - será que la canción llegó hasta el sol </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"1"
      },
      {
           "id":"12",
           "imgSource":"../images/can-mia-var/cancioneros/CHARANGO.jpg",
           "titulo":"Charango",
-          "desc":"lorem10",
+          "desc":"Consideraciones sobre el instrumento - Afinación. <br> Interpretación de los gráficos <br> Acordes más usados. <br> Agitando pañuelos - Añoranzas - Balderrama - Candombe para José - Carpas de Salta - De igual a igual <a href=\"#\" class=\"leermas\">Leer más</a><span> - De Simoca - El humahuaqueño - El pájaro Chogüí - El que toca nunca baila - Entra a mi hogar - La Omha - La vaca estudiosa - Las dos puntas - Los reyes magos - Padre del carnaval - Pescador y guitarrero - Por culpa del diablo Solo le pido a Dios - Todavía cantamos - Viva Jujuy - Zamba de carnaval </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"13",
           "imgSource":"../images/can-mia-var/cancioneros/FOLKLORE.jpg",
           "titulo":"Piano Folklore",
-          "desc":"lorem10",
+          "desc":"alfonina y el mar - balderrama - canción del adio - carpa de salta - como pajaros en el aire - la pomeña - la lopez pereyra - zamba para olvidarte - la pobrecita - la nochera - zamba de la candelaria - luna cautiva <a href=\"#\" class=\"leermas\">Leer más</a><span> - zamba de lozano - zamba para no morir - memorias de una vieja canción </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"14",
           "imgSource":"../images/can-mia-var/cancioneros/FOLKLORE_ROMANTICON1.jpg",
           "titulo":"Folklore Romanticos vol 1",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"15",
           "imgSource":"../images/can-mia-var/cancioneros/FOLKLORE_ROMANTICON2.jpg",
           "titulo":"Folklore Romanticos vol 2",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"16",
           "imgSource":"../images/can-mia-var/cancioneros/FOLKLORE_ROMANTICON3.jpg",
           "titulo":"Folklore Romanticos vol 3",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"17",
           "imgSource":"../images/can-mia-var/cancioneros/FOLKLORE_ROMANTICON4.jpg",
           "titulo":"Folklore Romanticos vol 4",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"18",
           "imgSource":"../images/can-mia-var/cancioneros/FOLKLORE1.jpg",
           "titulo":"Piano Folklore Litoral",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"19",
           "imgSource":"../images/can-mia-var/cancioneros/REGGAE1.jpg",
           "titulo":"Reggae1",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"20",
           "imgSource":"../images/can-mia-var/cancioneros/ROCK.jpg",
           "titulo":"PIANO ROCK NACIONAL",
-          "desc":"lorem10",
+          "desc":"sui generis - vox dei - patricio rey y sus redonditos de ricota - charly garcía - la renga - fito paez - rata blanca - los abuelos de la nada - los fabulosos cadillacs - pappo's blues",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"21",
           "imgSource":"../images/can-mia-var/cancioneros/ROMANTICOS.jpg",
           "titulo":"Piano Romanticos",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"22",
           "imgSource":"../images/can-mia-var/cancioneros/ROMANTICOS_N1.jpg",
           "titulo":"Romanticos Vol1",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"23",
           "imgSource":"../images/can-mia-var/cancioneros/ROMANTICOS_N2.jpg",
           "titulo":"Romanticos Vol2",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"24",
           "imgSource":"../images/can-mia-var/cancioneros/ROMANTICOS_N3.jpg",
           "titulo":"Romanticos Vol3",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"25",
           "imgSource":"../images/can-mia-var/cancioneros/TANGO.jpg",
           "titulo":"Piano Tango",
-          "desc":"lorem10",
+          "desc":"Toda mi vida - A media luz - El amor desolado - Caminito - Como dos extraños - Flor de lino - Garganta con arena - Mano a mano - Melodías de arrabal - Pedacito de cielo - Sur - Tinta roja <a href=\"#\" class=\"leermas\">Leer más</a><span> - Tu pálida voz - Uno - Ventanita de arrabal </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"26",
           "imgSource":"../images/can-mia-var/cancioneros/UKELELE1.jpg",
           "titulo":"Ukelele1",
-          "desc":"lorem10",
+          "desc":"introducción al instrumento - tablaturas simples - metodo fácil y sencillo - incluye cancionero con temas para practicar",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"27",
           "imgSource":"../images/can-mia-var/cancioneros/UKELELE2.jpg",
           "titulo":"Ukelele2",
-          "desc":"lorem10",
+          "desc":"introducción al instrumento - tablaturas simples - metodo fácil y sencillo - incluye cancionero con temas para practicar",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"28",
           "imgSource":"../images/can-mia-var/cancioneros/UKELELE3.jpg",
           "titulo":"Ukelele3",
-          "desc":"lorem10",
+          "desc":"introducción al instrumento - tablaturas simples - metodo fácil y sencillo - incluye cancionero con temas para practicar",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen cancionero"
+          "alt":"imagen cancionero",
+          "altura":"0"
      },
      {
           "id":"29",
           "imgSource":"../images/can-mia-var/miafitas/c-AROMATERAPIA.jpg",
           "titulo":"Aromaterapia",
-          "desc":"lorem10",
+          "desc":"La aromaterapia es una técnica alternativa que utiliza aceites esenciales provenientes de plantas, cortezas, hierbas y flores para promover tanto el bienestar físico como psicológico de las personas",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"30",
           "imgSource":"../images/can-mia-var/miafitas/c-CARTAS-ESPAN.jpg",
           "titulo":"Cartas Españolas",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"31",
           "imgSource":"../images/can-mia-var/miafitas/c-CELIACOS.jpg",
           "titulo":"Recetario Celiacos",
-          "desc":"lorem10",
+          "desc":"Sin T.A.C.C. pero con buen sabor <br> Arrollado de carne y vegetales - Arroz oriental - Berenjenas a la napolitana - Bifes de carne de ternera y batatas - Bocaditos de cebolla y queso <a href=\"#\" class=\"leermas\">Leer más</a><span> - Caldo de verduras - Faina rellena - Fideos verdes con ajo y tomates  - Galletas de agua - Masa de papas para tarta - Milanesa a la albahaca fresca - Ñoquis de verdura - Pan de soja - Pizza vegetariana - Pollo a la cebolla - Salsa agridulce de ciruelas - Salsa de queso - Salsa fría de albahaca - Sopa de lentejas - Sopa de tomate - Budín de chocolate - Budín marmolado - Copa frutada con crema de nuez y muchas más </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"32",
           "imgSource":"../images/can-mia-var/miafitas/c-FENG_SHUI.jpg",
           "titulo":"Feng Shui",
-          "desc":"lorem10",
+          "desc":"El feng shui es un antiguo sistema filosófico chino de origen taoísta basado en la ocupación consciente y armónica del espacio, con el fin de lograr de este una influencia positiva sobre las personas que lo ocupan.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"33",
           "imgSource":"../images/can-mia-var/miafitas/c-FRUTAS.jpg",
           "titulo":"Frutas que Curan",
-          "desc":"lorem10",
+          "desc":"¿Qué es la Frutoterapia? <br> Las frutas son un regalo de la naturaleza, formadas por un 90% de agua, azúcares, sales minerales, innumerables vitaminas y fibras. Su consumo está <a href=\"#\" class=\"leermas\">Leer más</a><span> intensamente relacionado con una reducción en el riesgo de desarrollar cáncer, muchos grupos involucrados en la prevención recomiendan comer por lo menos cinco porciones de frutas y verduras al día. <br> Al igual que lo hacían nuestros ancestros, hoy en día se han intensificado las investigaciones en la medicina natural y se ha demostrado que existen muchas frutas que poseen propiedades curativas y preventivas. <br> La FRUTOTERAPIA es una técnica terapéutica basada en el estudio de las sustancias nutricionales y medicinales de los frutos de la tierra: proteínas, vitaminas, sales minerales, oligoelementos, etc., que ayudan a metabolizar los azúcares, los lípidos y las proteínas, además de actuar sobre los órganos afectados por enfermedades. </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"34",
           "imgSource":"../images/can-mia-var/miafitas/c-HIERBAS.jpg",
           "titulo":"Hierbas Curativas",
-          "desc":"lorem10",
+          "desc":"Guía completa de los beneficios que nos otorga el consumo de yuyos, plantas, semillas, raíces, etc. <br> Cuando hablamos de plantas o hierbas medicinales debemos aclarar <a href=\"#\" class=\"leermas\">Leer más</a><span> a que nos estamos refiriendo a las hojas, corteza, raíces, polen, pétalos, semillas, frutos, y tallos de árboles, arbustos, algas, hongos, hierbas y otros tipos de representantes del reino vegetal. Como vemos, las plantas medicinales comprenden un espectro sumamente amplio. Estudiar y comprender todas las posibles aplicaciones de las plantas medicinales es una tarea gigante en la cual cada día se descubre algo nuevo. Sin embargo, hoy ya sabemos lo suficiente para concluir que usadas correctamente las plantas medicinales proveen alternativas para prevenir, y tratar numerosas afecciones en forma efectiva y segura. </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"35",
           "imgSource":"../images/can-mia-var/miafitas/c-MANDALAS.jpg",
           "titulo":"Mandala",
-          "desc":"lorem10",
+          "desc":"Los mandalas son representaciones simbólicas espirituales y rituales del macrocosmos y el microcosmos, utilizadas en el budismo y el hinduismo",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"36",
           "imgSource":"../images/can-mia-var/miafitas/c-NOMBRE_BEBES.jpg",
           "titulo":"Nombres de Bebe",
-          "desc":"lorem10",
+          "desc":"Cientos de nombres de Nenes y Nenas, para elegir el nombre que los marcará toda su existencia. <br> Origen y significado de cada uno. Esta guía le proporcionará más opciones <a href=\"#\" class=\"leermas\">Leer más</a><span> para su elección, ya que hablamos nada menos que de elegir el nombre que llevará TODA su vida. </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"37",
           "imgSource":"../images/can-mia-var/miafitas/c-PIEDRAS.jpg",
           "titulo":"Piedras y Gemas",
-          "desc":"lorem10",
+          "desc":"Gemoterapia también conocida en lengua española como \"Yemoterapia\" lo que marca la diferencia con la terapia de \"Gemas\" minerales conocida como cristaloterapia, es una forma de medicina alternativa",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"38",
           "imgSource":"../images/can-mia-var/miafitas/c-RUNAS.jpg",
           "titulo":"Runas",
-          "desc":"lorem10",
+          "desc":"LIBRO DE INTERPRETACION PASO A PASO <br> 25 RUNAS CON SIMBOLOS BAJO RELIEVE. <br> BOLSA DE RUNAS <br> CARTON DE SOPORTE PARA TIRADAS.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"39",
           "imgSource":"../images/can-mia-var/miafitas/c-SUENOS.jpg",
           "titulo":"Numeros y Sueños",
-          "desc":"lorem10",
+          "desc":"Tablas de Números correspondiente a cada sueño <br> El significado de los Sueños - Los avisos del destino - Como extraer de sus Sueños los Números para jugar a la Ruleta, la Quiniela y la Lotería.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"40",
           "imgSource":"../images/can-mia-var/miafitas/c-YOGA.jpg",
           "titulo":"Yoga",
-          "desc":"lorem10",
+          "desc":"El yoga es una disciplina tradicional espiritual, física y mental que se originó en la India. El yoga es una de las seis dárshanas ortodoxas del hinduismo. Enfatiza <a href=\"#\" class=\"leermas\">Leer más</a><span> la meditación y la liberación, y su texto principal es el Yoga sutra </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"41",
           "imgSource":"../images/can-mia-var/miafitas/guadalupe.jpg",
           "titulo":"Virgen de Guadalupe",
-          "desc":"lorem10",
+          "desc":"Nuestra Señora de Guadalupe, conocida comúnmente como la Virgen de Guadalupe, ​ es una aparición mariana de la Iglesia católica de origen mexicano, cuya imagen <a href=\"#\" class=\"leermas\">Leer más</a><span> tiene su principal centro de culto en la Basílica de Guadalupe, ubicada en las faldas del cerro del Tepeyac, en el norte de la Ciudad de México.</span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"42",
           "imgSource":"../images/can-mia-var/miafitas/reiki.jpg",
           "titulo":"Reiki",
-          "desc":"lorem10",
+          "desc":"Reiki es un tipo de medicina alternativa japonesa considerada como pseudoterapia​​​ englobada dentro de las \"terapias de energía\" ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"43",
           "imgSource":"../images/can-mia-var/miafitas/tarot.jpg",
           "titulo":"Tarot SIN cartas",
-          "desc":"lorem10",
+          "desc":"El tarot es una baraja de naipes que, además de servir para jugar, se usa a menudo como medio de «adivinación» del pasado, de la situación presente del <a href=\"#\" class=\"leermas\">Leer más</a><span> consultante y algunas veces del futuro, por lo que constituiría un tipo de cartomancia. </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"44",
           "imgSource":"../images/can-mia-var/miafitas/velas.jpg",
           "titulo":"Velas",
-          "desc":"lorem10",
+          "desc":" sin descripción ",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen revista"
+          "alt":"imagen revista",
+          "altura":"0"
      },
      {
           "id":"45",
           "imgSource":"../images/can-mia-var/varios/1Drjekyl.jpg",
           "titulo":"Dr. Jekyl y Mr Hyde",
-          "desc":"lorem10",
-          "pcio":"200",
+          "desc":"El extraño caso del doctor Jekyll y el señor Hyde (en inglés Strange Case of Dr Jekyll and Mr Hyde), a veces titulado simplemente El doctor Jekyll y el señor Hyde, es una novela <a href=\"#\" class=\"leermas\">Leer más</a> <span> corta escrita por Robert Louis Stevenson y publicada por primera vez en inglés en 1886, que trata acerca de un abogado, Gabriel John Utterson, que investiga la extraña relación entre su viejo amigo, el Dr. Henry Jekyll, y el misántropo Edward Hyde.</span>",
+          "pcio":"1100",
           "stock":"56",
-          "alt":"imagen libro"
+          "alt":"imagen libro",
+          "altura":"0"
      },
      {
           "id":"46",
           "imgSource":"../images/can-mia-var/varios/2elJugueteRabioso.jpg",
           "titulo":"El Jueguete Rabioso",
-          "desc":"lorem10",
-          "pcio":"200",
+          "desc":"El juguete rabioso es la primera novela del escritor argentino Roberto Arlt, publicada en el año 1926 por la Editorial Latina. Roberto Arlt es el exponente más destacado del <a href=\"#\" class=\"leermas\">Leer más</a> <span> Grupo de Boedo, escritores que publicaban en la Editorial Claridad y se reunían en el Café El Japonés </span>",
+          "pcio":"1100",
           "stock":"56",
-          "alt":"imagen libro"
+          "alt":"imagen libro",
+          "altura":"0"
      },
      {
           "id":"47",
           "imgSource":"../images/can-mia-var/varios/3elArteDeLaGuerra.jpg",
           "titulo":"El Arte de la Guerra",
-          "desc":"lorem10",
+          "desc":"El arte de la guerra es un libro sobre tácticas y estrategias militares, escrito por Sun Tzu, un famoso estratega militar chino. Se trata de un antiguo tratado militar chino <a href=\"#\" class=\"leermas\">Leer más</a> <span> que data del final del periodo de las primaveras y otoños. </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen libro"
+          "alt":"imagen libro",
+          "altura":"0"
      },
      {
           "id":"48",
           "imgSource":"../images/can-mia-var/varios/4MartinFierro.jpg",
           "titulo":"Martín Fierro",
-          "desc":"lorem10",
+          "desc":"El Gaucho Martín Fierro es un poema narrativo escrito en verso y una obra literaria considerada ejemplar del género gauchesco, escrita por el poeta argentino José Hernández en 1872.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen libro"
+          "alt":"imagen libro",
+          "altura":"0"
      },
      {
           "id":"49",
           "imgSource":"../images/can-mia-var/varios/5anafrank.jpg",
           "titulo":"El Diario Íntimo de Ana Frank",
-          "desc":"lorem10",
+          "desc":"El Diario de Ana se inicia como una expresión privada de sus pensamientos íntimos, expresando la intención de nunca permitir que otros lo leyeran. Describe cándidamente su <a href=\"#\" class=\"leermas\">Leer más</a> <span> vida, su familia y compañeros y su situación, mientras empieza a reconocer su ambición de escribir novelas y publicarlas. </span>",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen libro"
+          "alt":"imagen libro",
+          "altura":"0"
      },
      {
           "id":"50",
           "imgSource":"../images/can-mia-var/varios/6rebelion.jpg",
           "titulo":"Rebelión en la Granja",
-          "desc":"lorem10",
+          "desc":"Rebelión en la granja es una novela corta satírica del escritor británico George Orwell publicada en 1945. La obra es una fábula sobre cómo el régimen soviético de Iósif Stalin corrompe el socialismo.",
           "pcio":"200",
           "stock":"56",
-          "alt":"imagen libro"
+          "alt":"imagen libro",
+          "altura":"0"
      }
 ]
