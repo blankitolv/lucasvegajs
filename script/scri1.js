@@ -23,7 +23,7 @@ function muestraCliente(ventas){
           <img src="${element.imagen}" width=100>
           <p class="name">${element.titulo}</p>
           <p>$${element.precio}</p>
-          <input type="number" class="cantidad" name="cant" min="0" max="999" value="${element.cant}">
+          <input type="number" class="cantidad" name="cant" min="0" max="999" value="1">
           <button class="deleteItem"> x </button>
           `
           productosDesc.appendChild(divProductos);

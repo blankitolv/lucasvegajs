@@ -1,18 +1,45 @@
 // evento de "leer más" dentro de las tarjetas
 function eventLeerMas(){
      const leerMasAll=document.querySelectorAll(".leermas");
-     // console.log(leerMasAll);
      leerMasAll.forEach(element => {
           element.addEventListener("click",clickLeerMas);
-          function clickLeerMas(e){
+          function clickLeerMas(e){                                   //hace click
                e.preventDefault();
-               element.setAttribute("style","display:none");
-               let hijo=(element.parentNode).querySelector("span");
-               hijo.setAttribute("style","display:contents")
 
+               // oculta el boton del evento (a)
+               element.setAttribute("style","display:none");       
+
+               // selecciona el span (en span)
+               let span=(element.parentNode).querySelector("span");   
+
+               // muestra span
+               span.setAttribute("style","display:contents")        
+
+               // selecciona leer menos (aleermenos)
+               let aleermenos=(element.parentNode).querySelector(".leermenos"); 
+
+               // muestra contenido de aleermenos
+               aleermenos.setAttribute("style","display:contents")          
           }
      })
 }
+function eventLeerMenos(){
+     const leerMenosall=document.querySelectorAll(".leermenos");
+     leerMenosall.forEach(element => {
+          element.addEventListener("click",clickLeerMenos);
+          function clickLeerMenos(e){
+               e.preventDefault();
+               // oculta el boton del evento (a)
+               element.setAttribute("style","display:none"); 
+               // selecciona el span (en span)
+               let span=(element.parentNode).querySelector("span");   
+               span.setAttribute("style","display:none")     
+               // selecciona leer menos (aleermenos)
+               let leermas=(element.parentNode).querySelector(".leermas");
+               leermas.setAttribute("style","display:contents")     
+          }
+     }
+)}
 let arrayVentas;
 class Articulos{
      constructor(titulo,imagen,precio,cant){
@@ -29,14 +56,14 @@ fetch('/bdata/bdata.json')
      .then (data => {
           for (indice of data){
                let largo='';
-               indice.altura == "1"? largo='style="width: 17rem;':largo='style="width: 14rem;'
+               indice.altura == "1"? largo='style="width: 17rem;' : largo='style="width: 14rem;'
                contentProducts.innerHTML+=`
                <div class="productos-unidad mx-2 my-2 card" ${largo}">
                     <img src="${indice.imgSource}" class="card-img-top " alt="${indice.alt}">
                     <div class="card-body">
                          <h5 class="card-title">${indice.titulo}</h5>
                          <b>$</b><i>200</i>
-                         <p class="card-text" style="font-size:15px;">	
+                         <p class="card-text" style="font-size:14px;">	
                          ${indice.desc}
                          </p>
                          <a href="#" class="btn btn-dark addToCart">Añadir al Carrito</a>
@@ -52,6 +79,7 @@ document.onreadystatechange = () => {
                console.log("pagina cargada");
                obtenerDatos();
                eventLeerMas();
+               eventLeerMenos();
           }
      };
 };
@@ -197,7 +225,6 @@ if (arrayVentas.length !=null || arrayVentas.length != 0){
 }
 
 // ajax dolar
-
 let btnDolar=document.querySelector('#dolar');
 btnDolar.addEventListener('click',()=>{
      obtenerDatos();
@@ -256,5 +283,6 @@ function actualizaTestigoCarrito(){
           muestraTestigoCarrito(aux);
      } else {
           let aux=0;
+          muestraTestigoCarrito(aux);
      }
 }
