@@ -1,3 +1,4 @@
+// evento de "leer más" dentro de las tarjetas
 function eventLeerMas(){
      const leerMasAll=document.querySelectorAll(".leermas");
      // console.log(leerMasAll);
@@ -30,12 +31,12 @@ fetch('/bdata/bdata.json')
                let largo='';
                indice.altura == "1"? largo='style="width: 17rem;':largo='style="width: 14rem;'
                contentProducts.innerHTML+=`
-               <div class="productos-unidad mx-2 my-2" ${largo}">
+               <div class="productos-unidad mx-2 my-2 card" ${largo}">
                     <img src="${indice.imgSource}" class="card-img-top " alt="${indice.alt}">
                     <div class="card-body">
                          <h5 class="card-title">${indice.titulo}</h5>
                          <b>$</b><i>200</i>
-                         <p class="card-text">	
+                         <p class="card-text" style="font-size:15px;">	
                          ${indice.desc}
                          </p>
                          <a href="#" class="btn btn-dark addToCart">Añadir al Carrito</a>

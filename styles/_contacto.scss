@@ -1,0 +1,143 @@
+.contacto {
+     position: relative;
+     z-index: 1;
+     min-height: 100vh;
+     padding: 150px 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: url("../images/monu4.png");
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     .textura-contacto {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         z-index: 10;
+         top: 0%;
+         left: 0%;
+         background-image: url("../images/45-degree-fabric-dark.png");
+         filter: invert(10%);
+         -webkit-filter: invert(10%);
+         -moz-filter: invert(10%);
+         background-size:auto;
+         background-position: center;
+         }
+     .contenido{
+         position: relative;
+         z-index: 22;
+         max-width: 780px;
+         h1 {
+             align-self: left;
+             font-size: 2.1rem;
+             font-weight: 600;
+             color: #fff;
+         }
+         p {
+             text-align: center;
+             font-weight: 500;
+             color: rgb(255, 255, 255);
+             font-size: 20px;
+             letter-spacing: 1px;
+             a {
+                 color: rgb(88, 207, 216);
+                 font-weight: 700;
+                 text-shadow: 0 1px 0 rgb(0, 109, 103);
+                 letter-spacing: 1px;
+             }
+         }
+     }
+     .contenedor {
+         position: relative;
+         z-index: 11;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
+         .datos-contacto {
+             width: 50%;
+             display: flex;
+             flex-direction: column;
+             .box {
+                 position: relative;
+                 padding: 20px 0;
+                 display: flex;
+                 .icono {
+                     min-width: 60px;
+                     height: 60px;
+                     background: #fff;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     border-radius: 50%;
+                     font-size: 22px;
+                 }
+                 .texto-contacto{
+                     display: flex;
+                     margin-left: 20px;
+                     font-size: 16px;
+                     color: #fff;
+                     flex-direction: column;
+                     font-weight: 500;
+                     letter-spacing: 1px;
+                     h3 {
+                         font-weight:600;
+                         text-shadow: 0 1px 0 rgb(0, 82, 85);
+                         color: #0bc1ce;
+                     }
+                 }
+             }
+         }
+         .formulario-contacto {
+             width: 350px;
+             padding: 40px;
+             background-color: #fff;
+             h2 {
+                 font-size: 30px;
+                 color: #333;
+                 font-weight: 500;
+             }
+             .input-box {
+                 position: relative;
+                 width: 100%;
+                 margin-top: 10px;
+             }
+             .input-box input,textarea {
+                 width: 100%;
+                 padding: 5px 0;
+                 font-size: 16px;
+                 margin: 10px 0;
+                 border: none;
+                 border-bottom: 2px solid #333;
+                 outline: none;
+                 resize: none;
+             }
+             .input-box input[type="submit"] {
+                 width: 100px;
+                 background:#0bc1ce;
+                 color: #000;
+                 border: none;
+                 cursor: pointer;
+                 padding: 10px;
+                 font-size: 18px;
+                 font-weight: 500;
+                 transition: 0.8s ease-in;
+             }
+             .input-box input[type="submit"]:hover {
+                 background:#008a8a;
+                 transition: 0.4s ease-in; 
+             }
+         }
+     }
+     .mapa {
+         z-index: 11;
+         display: flex;
+         width: 100%;
+         height: 80vh;
+         padding: 50px 5px;
+         overflow: hidden;
+     }
+ }

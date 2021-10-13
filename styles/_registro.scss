@@ -1,0 +1,149 @@
+.main-registro {
+     padding:1px;
+     width: 100%;   
+     background: rgb(201,253,255);
+     background: linear-gradient(90deg, rgba(201,253,255,1) 0%, rgba(213,255,225,1) 50%, rgba(210,211,255,1) 100%);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     .registro{
+         width: 31rem;
+         height: auto;
+         margin: 150px auto;
+         .cabeza-registro {
+             font-family: sans-serif;
+             margin-bottom: 25px;
+             h1{
+                 font-size: 22pt;
+                 line-height: 30px;
+                 font-weight: 700;
+                 color:rgb(0, 45, 56);
+                 span {
+                     font-weight: 900;
+                     letter-spacing: 1px;
+                     color:rgb(0, 37, 204)
+                 }
+             }
+         }
+         .caja-registro {
+             margin-top: 15px;
+             padding: 1px;
+             width: 29rem;
+             height: auto;
+             background-color: rgb(255, 255, 255);
+             border-radius: 10px;
+             box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.56);
+             .registro-inicsesion{
+                 margin-top: 30px;
+                 display:flex;
+                 align-items: center;
+                 justify-content: center;
+                 flex-direction: column;
+                 h2{
+                     color:rgb(107, 107, 107);
+                     font-size: 12pt;
+                     line-height: 20px;
+                     font-weight: 600;
+                 }
+                 .btn-registro {
+                     text-align: center;
+                     padding: 18px 30px;
+                     margin: 10px auto 20px;
+                     width: 70%;
+                     background-color:$miazuloscuro;
+                     color:white;
+                     font-weight: 500;
+                     letter-spacing: 1px;
+                     border: none;
+                     transition: all .2s;
+                     &:hover {
+                         transition: all .2s;
+                         color: black;
+                         background-color:$miazulclaro;
+                         font-weight: 600;
+                         letter-spacing: 2px;
+                     }
+                 }
+             }
+             .separador{
+                 line-height: 25px;
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-evenly;
+                 align-items: stretch;
+                 hr {
+                     border-top: 1px solid black;
+                     width: 40%;
+                 }
+             }
+             .registro-formulario {
+                 display:flex;
+                 flex-direction: column;
+                 .linea {
+                     display: flex;
+                     flex-direction: row;
+                     justify-content:space-around;
+                     .columna-etiqueta {
+                         display: flex;
+                         flex-direction: column;
+                         width: 13.7rem;
+                         label {
+                             margin-top: 15px;
+                             font-size: 9pt;
+                             color:gray;
+                         }
+                         input[type=text],input[type=password],input[type=date],input[type=email],#select-provincia {
+                             border-radius: 5px;
+                             border:1px solid rgb(184, 184, 184);
+                             line-height: 30px;
+                         }
+                         input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder,input[type=date]{
+                             padding-left:1.25rem;
+                             font-size: 1rem;
+                         }
+                         #select-provincia{
+                             padding:4px;
+                             width: 200px;
+                             .select-item {
+                                 padding-left:20px;
+                                 font-size: 11pt;
+                             }
+                         }
+                         #correo {
+                             width: 12rem;
+                         }
+                     }
+                 }
+                 .centrado {
+                     margin-top: 10px;
+                     justify-content: center;
+                     align-content: center;
+                     align-items: baseline;
+                     #check-terminos,#check-news {
+                         margin-right: 7px;
+                     }
+                 }
+             }
+ 
+             #submit-registro {
+                 padding: 18px 30px;
+                 margin: 10px auto 20px;
+                 width: 70%;
+                 background-color: $micianmasoscuro;
+                 color:white;
+                 font-weight: 500;
+                 letter-spacing: 1px;
+                 border: none;
+                 transition: .2s;
+                 &:hover {
+                     transition:all .2s;
+                     background-color: $micianmasclaro;
+                     color:black;
+                     font-weight: 600;
+                     letter-spacing: 2px;
+                 }
+             }
+         }
+     }
+ }

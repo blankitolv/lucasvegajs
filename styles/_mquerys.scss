@@ -1,0 +1,1016 @@
+@media only screen and (min-width : 320px) and (max-width:360px){
+     html {
+         font-size: 70%;
+     }  
+     // index -> nuestras-redes ->
+     .marcas{
+         .container-nuestras-redes{
+             h6 {
+                 font-size: 1.5rem;
+             }
+             p{
+                 max-width:20rem;
+             }
+             .social{
+                 justify-content:center;
+             }
+         }
+         .container-hero-video{
+             .titulo-hero{
+                 p{
+                     font-size:95%;
+                 }
+             }
+         }
+         .cancionero-pic{
+             .video-index{
+                 display:none;
+             }
+             background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra360.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+         .miafita-pic {
+             .video-index {
+                 display: none;
+             }
+             background-image:url("../images/posters/0mujer-leyendo222.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+         .varios-pic {
+             .video-index {
+                 display: none;
+             }
+             background-image:url("../images/posters/0chica-leyendo360.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+     }
+     // productos
+     .bg-productos{
+         .site-productos{
+             padding:0px 0px;
+             .site-encabezado{
+                 h1{
+                     font-size: 100%;
+                 }
+             }
+             .content-busca-productos{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 .busca-y-filtro{
+                     width: 100vw;
+                     .buscar{
+                         align-self: center;
+                     }
+                 }
+             }
+             .ordena-producto{
+                 margin-bottom: 20px;
+             }
+         }
+     }
+     // mayorista
+     .imagen-y-login{
+         .container-login{
+             .bkg-login{
+                 background-image: url("../images/minw539-2.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+             }
+             .textos-login{
+                 top: 25%;
+                 position: absolute;
+                 .hipertextos-login{
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     .link-create{
+                         margin-top:10px;
+                         a{
+                             font-size: 1.2rem;
+                             letter-spacing: 1px;
+                             text-shadow: 1px 1px 2px black;
+                             font-weight: 500;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     .main-mayorista{
+         .titulos-mayorista{
+             h1{
+                 font-size:1.8rem;
+             }
+             h2{
+                 max-width: 25rem;
+             }
+         }
+     }
+     // registro
+     .main-registro{
+         .registro{
+             width: 28rem;
+             .caja-registro{
+                 margin:0px auto;
+                 width: 26rem;
+                 .registro-formulario{
+                     align-items:stretch;
+                     .linea{
+                         flex-direction: column;
+                         align-items: center;
+                         .columna-etiqueta{
+                             #correo{
+                                 align-self: center;
+                                 width: 20rem;
+                             }
+                         }
+                     }
+                     #linea-columna{
+                         flex-direction: column;
+                     }
+                     .centrado {
+                         margin-top: 10px;
+                         justify-content: center;
+                         align-content: center;
+                         align-items: baseline;
+                         #check-terminos,#check-news {
+                             margin-right: 7px;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     // faqs
+     .super-contenedor{
+         .titulos-faqs{
+             width: 90%;
+             padding:1.4rem;
+             align-items: flex-start;
+             h1{
+                 padding:2px;
+                 margin:2px 2px 10px;
+                 font-size: 2rem;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+             }
+             p{
+                 min-width: 90%;
+                 font-size: 1.4rem;
+                 line-height: 1.8rem;
+                 text-align: justify;
+                 text-justify: inter-word;
+                 font-weight: 500;
+             }
+         }
+     }
+     // contacto
+     .contacto{
+         padding: 1px 1px;
+         .contenido{
+             h1{
+                 margin:20px auto 20px 10px;
+                 font-size: 2rem;
+                 font-weight: 600;
+             }
+             p{
+                 font-size: 1.30rem;
+                 max-width: 90%;
+                 margin:10px auto;
+             }
+         }
+         .contenedor{
+             flex-direction: column;
+             align-items: flex-start;
+             width: 100vw;
+             .datos-contacto{
+                 .box{
+                     margin-left:10px;
+                     width: 28rem;
+                     .texto-contacto{
+                         font-size: 1rem;
+                     }
+                 }
+             }
+             .formulario-contacto{
+                 width: 100vw;
+                 padding:0px;
+                 background-color:rgba(255, 255, 255, 0.404);
+                 form{
+                     display:flex;
+                     flex-direction: column;
+                     align-items: center;
+                     h2{
+                         margin:10px 15px;
+                     }
+                     .input-box {
+                         width: 90%;
+ 
+                     }
+                 }
+             }
+         }
+     }
+     // footer
+     .footer{
+         .footer-container{
+             background-image: url("../images/backhome539-1.jpg");
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             .footer-izquierda{
+                 width: 20rem;
+                 .footer-address{
+                     address{
+                         padding-left:10px;
+                     }
+                 }
+                 .footer-social{
+                     width: 13.7rem;
+                     .footer-facebook,.footer-insta,.footer-email{
+                         width: 35px;
+                         a{
+                             line-height: 35px;
+                         }
+                     }
+                 }
+             }
+             .footer-derecha{
+                 .footer-mapa{
+                     margin-right: 3rem;
+                 }
+             }
+         }
+     }
+ }
+ @media only screen and (min-width : 360px) and (max-width : 411px){
+     // index
+     .bkg-container{
+         .bkg-image-index{
+             .bkg-texto{
+                 span{
+                     font-size:1.4rem;
+                 }
+             }
+         }
+     }
+     // index -> posters
+     .marcas{
+         .container-hero-video{
+             .titulo-hero{
+                 h2{
+                     font-size: 1.8rem;
+                 }
+                 p{
+                     font-size: 1.3rem;
+                 }
+             }
+         }
+         .container-nuestras-redes{
+             h6 {
+                 font-size: 1.8rem;
+             }
+             p{
+                 max-width: 23rem;
+             }
+             .social{
+                 justify-content:center;
+             }
+         }
+         .cancionero-pic{
+             .video-index{
+                 display:none;
+             }
+             background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra360.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+         .miafita-pic {
+             .video-index {
+                 display: none;
+             }
+             background-image:url("../images/posters/0mujer-leyendo222.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+         .varios-pic {
+             .video-index {
+                 display: none;
+             }
+             background-image:url("../images/posters/0chica-leyendo360.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+     }
+     // productos
+     .bg-productos{
+         .site-productos{
+             .content-busca-productos{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 .buscar{
+                     align-self: center;
+                 }
+             }
+             .ordena-producto{
+                 margin-bottom: 20px;
+             }
+         }
+     }
+     // mayorista
+     .imagen-y-login{
+         .container-login{
+             .bkg-login{
+                 background-image: url("../images/minw539-2.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+             }
+         }
+     }
+     .main-mayorista{
+         .titulos-mayorista{
+             h1{
+                 font-size:1.8rem;
+             }
+             h2{
+                 max-width: 25rem;
+             }
+         }
+     }
+     // contacto
+     .contacto{
+         background:url("../images/monu-peq.png");
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         .contenido{
+             h1{
+                 font-size: 2rem;
+                 margin-bottom:30px;
+             }
+             p{
+                 font-size: 1.30rem;
+             }
+         }
+         .contenedor{
+             flex-direction: column;
+             width: 350px;
+             .datos-contacto{
+                 width: 300px;
+                 &:nth-child(3){
+                     margin-bottom:20px;
+                 }
+             }
+         }
+     }
+     // faqs
+     .super-contenedor{
+         .titulos-faqs{
+             width: 90%;
+             padding:1.4rem;
+             align-items: flex-start;
+             h1{
+                 padding:2px;
+                 margin:2px 2px 10px;
+                 font-size: 2rem;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+             }
+             p{
+                 min-width: 90%;
+                 font-size: 1.4rem;
+                 line-height: 1.8rem;
+                 text-align: justify;
+                 text-justify: inter-word;
+                 font-weight: 500;
+             }
+         }
+     }
+     // carrito
+     .bkg-container {
+         #bkg-image-carrito {
+             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/carrito-envios8005xx.jpg");
+             background-position:center;
+             background-size: cover;
+             .bkg-texto {
+                 flex-direction: column;
+                 p {
+                     text-align: center;
+                     color: rgb(235, 235, 235);
+                 }
+             }
+         }
+     }
+     .main-carrito{
+         .container-carrito{
+             .izquierda-derecha{
+                 .derecha-carrito{
+                     .header-carrito{
+                         align-items: center;
+                         h1{
+                             font-size: 1.8rem;
+                         }
+                         h2{
+                             max-width: 20rem;
+                             font-size: 2rem;
+                             margin:50px 2px 30px;
+                         }
+                     }
+                 }
+                 .izquierda-carrito{
+                     #formCarrito {
+                         width: 28rem;
+                         margin:100px auto;
+                         :nth-child(1){
+                             margin-top: 20px;
+                         }
+                         input[type=text],input[type=tel],input[type=email] {
+                             width: 24rem;
+                         }
+                         textarea {
+                             width: 90%;
+                             font-size: 1.2rem;
+                             &::placeholder{
+                                 color: white;
+                                 letter-spacing: 1px;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     // registro
+     .main-registro{
+         .registro{
+             .caja-registro{
+                 margin:15px;
+                 .registro-formulario{
+                     .linea{
+                         justify-content: space-around;
+                         .columna-etiqueta{
+                             #correo{
+                                 align-self: center;
+                                 width: 20rem;
+                             }
+                         }
+                     }
+                     #linea-columna{
+                         flex-direction: column;
+                     }
+                     .centrado {
+                         margin-top: 10px;
+                         justify-content: center;
+                         align-content: center;
+                         align-items: baseline;
+                         #check-terminos,#check-news {
+                             margin-right: 7px;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     // footer
+     .footer{
+         .footer-container{
+             background-image: url("../images/backhome539-1.jpg");
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             .footer-izquierda{
+                 width: 20rem;
+                 .footer-address{
+                     address{
+                         padding-left:10px;
+                     }
+                 }
+                 .footer-social{
+                     width: 13.7rem;
+                 }
+             }
+             .footer-derecha{
+                 .footer-mapa{
+                     margin-right: 6rem;
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media only screen and (min-width :411px) and (max-width : 768px){
+     // index -> posters
+     .marcas{
+         .container-nuestras-redes{
+             h6 {
+                 font-size: 1.8rem;
+             }
+             p {
+                 max-width: 26rem;
+                 font-size: 1.2rem;
+             }
+             .social{
+                 justify-content:center;
+             }
+         }
+         .bkg-container-carousel{
+             .texto-carousel {
+                 h3 {
+                     margin-left:3.125rem;
+                     font-size: 2.083rem;
+                 }
+                 p {
+                     font-size: 1.4rem;
+                 }
+             }
+         }
+         .cancionero-pic{
+             .video-index{
+                 display:none;
+             }
+             background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra411.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+         .miafita-pic {
+             .video-index {
+                 display: none;
+             }
+             background-image:url("../images/posters/0mujer-leyendo222.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+         .varios-pic {
+             .video-index {
+                 display: none;
+             }
+             background-image:url("../images/posters/0chica-leyendo411.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+     }
+     // registro
+     .main-registro{
+         .registro{
+             .caja-registro{
+                 margin:15px;
+                 .registro-formulario{
+                     .linea{
+                         justify-content: space-around;
+                         .columna-etiqueta{
+                             #correo{
+                                 align-self: center;
+                                 width: 20rem;
+                             }
+                         }
+                     }
+                     #linea-columna{
+                         flex-direction: column;
+                     }
+                     .centrado {
+                         margin-top: 10px;
+                         justify-content: center;
+                         align-content: center;
+                         align-items: baseline;
+                         #check-terminos,#check-news {
+                             margin-right: 7px;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     // contacto
+     .contacto{
+         background:url("../images/monu-med.png");
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         .contenido{
+             h1{
+                 font-size: 2rem;
+                 margin-bottom:30px;
+             }
+             p{
+                 font-size: 1.30rem;
+             }
+         }
+         .contenedor{
+             flex-direction: column;
+             width: 350px;
+             .datos-contacto{
+                 width: 300px;
+                 &:nth-child(3){
+                     margin-bottom:20px;
+                 }
+             }
+         }
+     }
+     // faqs
+     .super-contenedor{
+         .titulos-faqs{
+             width: 90%;
+             padding:1.4rem;
+             align-items: flex-start;
+             h1{
+                 padding:2px;
+                 margin:2px 2px 10px;
+                 font-size: 2rem;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+             }
+             p{
+                 min-width: 90%;
+                 font-size: 1.4rem;
+                 line-height: 1.8rem;
+                 text-align: justify;
+                 text-justify: inter-word;
+                 font-weight: 500;
+             }
+         }
+     }
+     // mayorista
+     .imagen-y-login{
+         .container-login{
+             .bkg-login{
+                 background-image: url("../images/minw767-2.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+             }
+         }
+     }
+     // productos
+     .bg-productos{
+         .site-productos{
+             .content-busca-productos{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 .buscar{
+                     align-self: center;
+                 }
+                 .busca-y-filtro{
+                     width: 100%;
+                     margin-bottom: 3rem;
+                 }
+             }
+             .ordena-producto{
+                 margin-bottom: 20px;
+             }
+         }
+     }
+     // footer
+     .footer{
+         .footer-container{
+             background-image: url("../images/backhome767.png");
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             .footer-izquierda{
+                 width: 20rem;
+                 .footer-social{
+                     width: 25.7rem;
+                     margin-left: 10px;
+                 }
+             }
+             .footer-derecha{
+                 .footer-mapa{
+                     margin-right: 6rem;
+                 }
+             }
+         }
+     }
+ }
+ /* iPads (portrait and landscape) ----------- */
+ @media only screen and (min-width : 769px) and (max-width : 1024px) {
+     html {
+         font-size: 100%;
+     }  
+     //index
+     .marcas{
+         .container-hero-video{
+             .titulo-hero{
+                 h2{
+                     font-size: 1.6rem;
+                 }
+                 p{
+                     font-size: 1.2rem;
+                 }
+             }
+         }
+         .container-nuestras-redes{
+             h6 {
+                 font-size: 1.8rem;
+             }
+             .social{
+                 justify-content:center;
+             }
+         }
+     }
+     // contacto
+     .contacto{
+         .contenido{
+             h1{
+                 font-size: 2rem;
+                 margin-bottom:30px;
+             }
+             p{
+                 font-size: 1.30rem;
+             }
+         }
+         .contenedor{
+             flex-direction: column;
+             width: 350px;
+             .datos-contacto{
+                 width: 300px;
+                 &:nth-child(3){
+                     margin-bottom:20px;
+                 }
+             }
+         }
+     }
+     // registro
+     .main-registro{
+         .registro{
+             .caja-registro{
+                 margin:15px;
+                 .registro-formulario{
+                     .linea{
+                         justify-content:baseline;
+                         .columna-etiqueta{
+                             #correo{
+                                 align-self: center;
+                                 width: 28rem;
+                             }
+                         }
+                     }
+                     // #linea-columna{
+                     //     flex-direction: column;
+                     // }
+                     .centrado {
+                         margin-top: 10px;
+                         justify-content: center;
+                         align-content: center;
+                         align-items: baseline;
+                         #check-terminos,#check-news {
+                             margin-right: 7px;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     // productos
+     .banner-productos{
+         width: 100%;
+         height: 70vh;
+         background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+         background-attachment: fixed;
+         background-position: 50% 50%;
+     }
+     .bg-productos{
+         .site-productos{
+             .content-busca-productos{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 .buscar{
+                     align-self: center;
+                 }
+                 .busca-y-filtro{
+                     width: 100%;
+                     margin-bottom: 3rem;
+                 }
+             }
+             .ordena-producto{
+                 margin-bottom: 20px;
+             }
+         }
+     }
+     // mayorista
+     .imagen-y-login{
+         .container-login{
+             .bkg-login{
+                 background-image: url("../images/minw1083-2.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+             }
+         }
+     }
+     // faqs
+     .super-contenedor{
+         .titulos-faqs{
+             width: 90%;
+             padding:1.4rem;
+             align-items: flex-start;
+             h1{
+                 padding:2px;
+                 margin:2px 2px 10px;
+                 font-size: 2rem;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+             }
+             p{
+                 min-width: 90%;
+                 font-size: 1.4rem;
+                 line-height: 1.8rem;
+                 text-align: justify;
+                 text-justify: inter-word;
+                 font-weight: 500;
+             }
+         }
+     }
+     // footer
+     .footer{
+       .footer-container{
+         background-image: url("../images/backhome1083.png");
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         .footer-derecha{
+             .footer-mapa{
+                 margin-right: 6rem;
+             }
+         }
+         .footer-izquierda{
+             .footer-address{
+                 address{
+                     font-size: 0.8rem;
+                 }
+             }
+         }
+       }
+     }
+ }
+ @media only screen and (min-width : 1024px){
+     html {
+         font-size: 100%;
+     }
+     // index -> posters
+     .marcas{
+         .container-hero-video{
+             .titulo-hero{
+                 h2{
+                     font-size: 1.6rem;
+                 }
+                 p{
+                     font-size: 1.2rem;
+                 }
+             }
+         }
+         .bkg-container-carousel{
+             .texto-carousel {
+                 h3 {
+                     margin-left:3.125rem;
+                     font-size: 2.083rem;
+                 }
+                 p {
+                     font-size: 1.2rem;
+                 }
+             }
+         }
+     }
+     .card-text {
+         font-size: 0.8rem;
+     }
+     // registro
+     .main-registro{
+         .registro{
+             .caja-registro{
+                 margin:15px;
+                 .registro-formulario{
+                     .linea{
+                         justify-content:baseline;
+                         .columna-etiqueta{
+                             #correo{
+                                 align-self: center;
+                                 width: 28rem;
+                             }
+                         }
+                     }
+                     // #linea-columna{
+                     //     flex-direction: column;
+                     // }
+                     .centrado {
+                         margin-top: 10px;
+                         justify-content: center;
+                         align-content: center;
+                         align-items: baseline;
+                         #check-terminos,#check-news {
+                             margin-right: 7px;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     //productos
+     .banner-productos{
+         width: 100%;
+         height: 50vh;
+         background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+         background-attachment: fixed;
+         background-position: 50% 80%;
+     }
+     // mayorista
+     .imagen-y-login{
+         .container-login{
+             .bkg-login{
+                 background-image: url("../images/minw1083-2.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+             }
+         }
+     }
+     // footer
+     .footer {
+         .footer-container{
+             background-image: url("../images/backhome1399.jpg");
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+         }
+     }
+ 
+ }
+ @media only screen and (min-width : 1224px) {
+     html {
+         font-size: 100%;
+     }
+     // index -> posters
+     .marcas{
+         .container-hero-video{
+             .titulo-hero{
+                 h2{
+                     font-size: 1.8rem;
+                 }
+                 p{
+                     font-size: 1.4rem;
+                 }
+             }
+         }
+         .bkg-container-carousel{
+             .texto-carousel {
+                 h3 {
+                     margin-left:3.125rem;
+                     font-size: 2.083rem;
+                 }
+                 p {
+                     font-size: 1.2rem;
+                 }
+             }
+         }
+     }
+     // mayorista
+     .imagen-y-login{
+         .container-login{
+             .bkg-login{
+                 background-image: url("../images/minw1399-1.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+             }
+         }
+     }
+     // faqs
+     .super-contenedor{
+         .titulos-faqs{
+             width: 90%;
+             padding:1.4rem;
+             align-items: flex-start;
+             h1{
+                 padding:2px;
+                 margin:2px 2px 10px;
+                 font-size: 2rem;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+             }
+             p{
+                 min-width: 90%;
+                 font-size: 1.4rem;
+                 line-height: 1.8rem;
+                 text-align: justify;
+                 text-justify: inter-word;
+                 font-weight: 500;
+             }
+         }
+     }
+     //productos
+     .banner-productos{
+         width: 100%;
+         height: 70vh;
+         background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+         background-attachment: fixed;
+         background-position: 50% 50%;
+     }
+ }

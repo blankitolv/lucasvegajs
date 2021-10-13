@@ -1,0 +1,218 @@
+header {
+    width: 100%;
+    .supramenu {
+        ul {
+            background-color:white;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-end;
+            margin:0px;
+            font-size: 10pt;
+            li {
+                display: inline-block;
+                line-height: 30px;
+                margin: 0 5px;
+                padding: 0 5px;
+                font-weight: 550;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    nav {
+        background-color:$micianclaro;
+        height: 80px;
+        .logo {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                font-size: 20pt;
+                padding:0px 30px;
+                color:white;            
+                line-height: 80px;            
+                font-weight: bold;
+                cursor:pointer;
+            }
+            @media screen and (min-width:360px) and (max-width:420px) {
+                a {
+                    font-size: 18pt;
+                    padding:0px 20px;
+                }               
+            }
+            @media screen and (min-width:320px) and (max-width:360px) {
+                a {
+                    font-size: 16pt;
+                    padding:0px 10px;
+                }               
+            }
+            @media screen and (min-width:280px) and (max-width:320px) {
+                a {
+                    font-size: 11pt;
+                    padding:0px 2px;
+                }               
+            }
+        }
+        ul { 
+            float: right;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            padding-left: 5px;
+            li {
+                color: white;
+                text-transform:capitalize;
+                font-size: 11pt;
+                line-height: 80px;
+                font-weight: 500;
+                letter-spacing: 1.5px;
+                display: inline-block;
+                a {
+                    font-size: 12pt;
+                    border-radius: 3px;                    
+                    color: white;
+                    padding: 7px 12px;
+                    &:hover,&.activo {
+                        background-color: $micianmasclaro;
+                        color: rgb(8, 75, 92);
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+        }
+        .checkbtn {
+            position: relative;
+            font-size: 30px;
+            color: white;
+            float:right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            z-index: 55;
+        }
+        #check {
+            display: none;
+        }
+        @media (max-width:955px) {
+            .logo {
+                font-size: 17pt;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:850px){
+            .logo {
+                padding-left: 30px;
+            }
+            .checkbtn{
+                display: block;
+            }
+            ul {
+                position: fixed;           
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(19, 100, 114, 0.836);
+                top:0px;
+                left:-100%;
+                text-align: center;
+                z-index: 50;
+                transition: all .7s ease-in-out;
+                li {
+                    display: block;
+                    margin: 50px 0px;
+                    line-height: 30px;
+                    a {
+                        font-size: 11pt;
+                        &:hover,&.activo {
+                            background:none;
+                            color: #000000;
+                            font-weight: bold;
+                            border-bottom:dotted 2px $micianoscuro;
+                        }
+                    }
+                }
+            }
+            #check:checked ~ ul {
+                left:0;
+            }
+        }
+    }
+}
+.bkg-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    .bkg-image-index {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/backhome1399.jpg");
+        background-position:center;
+        background-size: cover;
+        position: relative;
+        top: 12%;
+        left: 0;
+        z-index: 5;
+        background-attachment: fixed;
+        .bkg-texto {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor:default;
+            p {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 45px;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-size: 1.06rem;
+                letter-spacing: 2px;
+            }
+            span {
+                padding: 15px 0px;
+                color: #34b1c4;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                font-size: 1.667rem;
+                line-height: 20px;
+            }
+        }
+    }     
+}
+.fixed-whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 80%;
+    left: 5%;
+    z-index: 50; 
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color:#1fd1618c;
+        i {
+            font-size: 4.1662rem;
+            font-weight: 900;
+        }
+        p {
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        &:hover {
+        color:#1aad50;
+        text-shadow: 0px 0px 3px rgb(60, 255, 0);
+        }
+    }
+}
