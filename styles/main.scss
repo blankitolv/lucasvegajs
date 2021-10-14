@@ -11,6 +11,7 @@
 @import 'mayorista';
 @import 'mquerys';
 @import 'carrito';
+@import 'success';
 
 *{
     margin: 0px;
@@ -154,12 +155,5 @@ body {
         span{
             display:none;
         }
-    }
-}
-.main-success{
-    width: 100%;
-    height: auto;
-    .container {
-        
     }
 }

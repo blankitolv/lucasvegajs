@@ -12,7 +12,7 @@ function verificaDOM(){
      }
 }
 
-//se reciben las venta y se muestran
+// se reciben las venta y se muestran
 function muestraCliente(ventas){
      let productosDesc=document.querySelector('.productosDesc');
      ventas.forEach(element => {
@@ -23,13 +23,12 @@ function muestraCliente(ventas){
           <p class="name">${element.titulo}</p>
           <p>$${element.precio}</p>
           <input type="number" class="cantidad" name="cant" min="0" max="999" value="${element.cant}">
-          <button class="deleteItem"> x </button>
+          <button class="deleteItem"> X </button>
           `
           productosDesc.appendChild(divProductos);
      });
      actualizaMonto();
 }
-
 function actualizarLS(nombre){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      const ventasActualizadas=[];
@@ -104,6 +103,7 @@ function actualizaMonto(){
      });
      const etiquetaPrecio=document.querySelector('#precio');
      etiquetaPrecio.innerHTML=`$${aux}`;
+     etiquetaPrecio.setAttribute("style","font-size:20px");
 }
 //si el LS no está vacío ni su tamaño es igual a 0
 if (localStorage.getItem("carrito")!=null && JSON.parse(localStorage.getItem('carrito')).length!=0){
@@ -126,6 +126,8 @@ function verificaEmail (correo){
                     timer: 3000,
                   });
                   window.location.href = "./success.html";
+                  //una vez finalizada exitosamente la venta, limpia el LS
+                  localStorage.clear();
           } else {
                swal({
                     title: "Error",

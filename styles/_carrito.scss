@@ -137,7 +137,6 @@
                  width: 500px;
                  .header-carrito{
                      width: auto;
-                     
                      display: flex;
                      flex-direction: column;
                      color: white;
@@ -165,6 +164,22 @@
                      .hrcarrito {
                          border-top: 2px solid white;  
                      }
+                    #divtotal {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        background-color: rgba(255, 248, 220, 0.055);
+                        border-radius: 10px;
+                        box-shadow: -1px -1px 20px 1px rgba(0,0,0,0.6);
+                        -webkit-box-shadow: -1px -1px 20px 1px rgba(0,0,0,0.6);
+                        -moz-box-shadow: -1px -1px 20px 1px rgba(0,0,0,0.6);
+                        h2 {
+                            margin-top: 10px;
+                        }
+                        #precio{
+                            font-weight: 600;
+                        }
+                    }
                  }
              }
          }  

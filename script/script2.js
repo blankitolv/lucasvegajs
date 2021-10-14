@@ -42,9 +42,9 @@ let contentProducts = document.querySelector('.content-productos')
 fetch('/bdata/bdata.json')
      .then (response => response.json())
      .then (data => {
-          for (indice of data){
+          for (indice of data){ 
                let largo='';
-               indice.altura == "1"? largo='style="width: 17rem;' : largo='style="width: 14rem;'
+               indice.altura == "1"? largo='style="width: 18rem;' : largo='style="width: 20rem;'
                contentProducts.innerHTML+=`
                <div class="productos-unidad mx-2 my-2 card" ${largo}">
                     <img src="${indice.imgSource}" class="card-img-top " alt="${indice.alt}">
@@ -65,7 +65,6 @@ fetch('/bdata/bdata.json')
 document.onreadystatechange = () => {
      document.onreadystatechange = () => {
           if (document.readyState === 'complete') {
-               console.log("pagina cargada");
                obtenerDatos();
                eventLeerMas();
                eventLeerMenos();
@@ -80,7 +79,6 @@ function existe(productoEnviar){
                return true;
           }
      }
-     console.log("no existe");
      return false;
 }
 //SI el articulo NO ESTÁ en ventas, lo agrega a VENTAS y en LS + animación + actualiza testigo
@@ -92,11 +90,11 @@ function enviaLocalStorage (articulo){
           Swal.fire({
                position: 'top-end',
                width: 300,
-               height: 200,
+               // height: 200,
                title: `${articulo.titulo}`,
                text: "Añadido al carrito",
                icon: "success",
-               buttons: false,
+               // buttons: false,
                timer: 1500,
           });
           actualizaTestigoCarrito();
@@ -143,7 +141,7 @@ function vaciarDOMcarrito(e){
 let botonSiguiente = document.querySelector('#botonSiguiente');
 botonSiguiente.addEventListener('click',()=>{
      if (arrayVentas.length!=0){
-          swal({
+          Swal.fire({
                title: "La compra a sido cargada",
                text: "redireccionando...",
                icon: "success",
@@ -154,7 +152,7 @@ botonSiguiente.addEventListener('click',()=>{
                window.location.href = "./carrito.html#main-carrito";
           },2000);
      } else {
-          swal({
+          Swal.fire({
                title: "Error al cargar la compra",
                text: "... 404",
                icon: "info",
@@ -193,15 +191,15 @@ function insertarDOMcarrito(){
           // <p>$${arrayVentas[i].precio}</p>
           muestraCarrito.appendChild(div);
      }
-     let monto=calculaMonto(arrayVentas)
-     div=document.createElement('div');
-     div.innerHTML+=`
-     <hr>
-     <p>Monto Actual</p>
-     <hr>
-     <p>$${monto}</p>
-     `
-     muestraCarrito.appendChild(div);
+     // let monto=calculaMonto(arrayVentas)
+     // div=document.createElement('div');
+     // div.innerHTML+=`
+     // <hr>
+     // <p>Monto Actual</p>
+     // <hr>
+     // <p>$${monto}</p>
+     // `
+     // muestraCarrito.appendChild(div);
 }
 // al comenzar, si el arreglo arrayVentas NO está vacío NI es nulo, inserta las ventas al DOM
 verificaLS();
