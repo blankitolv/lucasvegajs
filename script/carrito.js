@@ -1,7 +1,6 @@
 document.onreadystatechange = () => {
      eventBorrar();
      eventInputCantidad();
-     eventImages();
 }
 // si no hay elementos en el carrito, se muestra una leyenda "ups, su carrito se encuentra vacío"
 function verificaDOM(){
@@ -47,9 +46,8 @@ function actualizarLS(nombre){
 //(2) se recibe todos los productos mostrados en el dom (listaProductos / HTML collections)
 function borrarItem(unProducto,listaProductos){
      listaProductos.forEach(element => {
-          // como recibe el [botón], se busca el contenido del nombre del padre.
+          // como recibe el [botón], se compara el nombre del padre.
           if (unProducto == element.parentNode.querySelector('.name').textContent){
-               // se borra la tarjeta
                element.parentNode.remove();
           }
      });
@@ -71,15 +69,14 @@ function eventBorrar(){
           });
      }
 }
+//crea evento de un input de cantidad
 function eventInputCantidad(){
      let inputcantidad=document.querySelectorAll('input')
      inputcantidad.forEach(element => {
           element.addEventListener('change',cantidad)
           function cantidad(e){
                e.preventDefault();
-               // console.log(typeof(this.value)); //string
                let nombreCantidad=(e.target.parentNode).querySelector('.name').textContent;
-               console.log(`${this.value} de ${nombreCantidad}`);
                enviarCantidad(Number (this.value),nombreCantidad)
                // luego buscar en el arreglo por nombre, modificar ventas.cantidad=cantidad
                // luego actualizar monto
@@ -91,19 +88,16 @@ function enviarCantidad(cantidad, nombre){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      ventas.forEach(element => {
           if (element.titulo==nombre){
-               console.log(typeof element.cant, typeof cantidad);
                element.cant=cantidad;
           }
      });
      localStorage.setItem('carrito',JSON.stringify(ventas));
-     console.log(localStorage.getItem('carrito'));
      actualizaMonto();
 }
 
 //cantidad de productos
 function actualizaMonto(){
      ventas=JSON.parse(localStorage.getItem('carrito'));
-     // console.log(ventas);
      let aux=0;
      ventas.forEach(element => {
           aux+=element.precio*element.cant;
@@ -131,7 +125,7 @@ function verificaEmail (correo){
                     button: false,
                     timer: 3000,
                   });
-                  window.location.href = "./p404.html";
+                  window.location.href = "./success.html";
           } else {
                swal({
                     title: "Error",

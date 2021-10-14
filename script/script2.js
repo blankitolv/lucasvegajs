@@ -1,40 +1,28 @@
-// evento de "leer más" dentro de las tarjetas
+// evento de "leer más" dentro de las tarjetas muestra mayor contenido
 function eventLeerMas(){
      const leerMasAll=document.querySelectorAll(".leermas");
      leerMasAll.forEach(element => {
           element.addEventListener("click",clickLeerMas);
-          function clickLeerMas(e){                                   //hace click
+          function clickLeerMas(e){
                e.preventDefault();
-
-               // oculta el boton del evento (a)
-               element.setAttribute("style","display:none");       
-
-               // selecciona el span (en span)
-               let span=(element.parentNode).querySelector("span");   
-
-               // muestra span
-               span.setAttribute("style","display:contents")        
-
-               // selecciona leer menos (aleermenos)
-               let aleermenos=(element.parentNode).querySelector(".leermenos"); 
-
-               // muestra contenido de aleermenos
-               aleermenos.setAttribute("style","display:contents")          
+               element.setAttribute("style","display:none"); 
+               let span=(element.parentNode).querySelector("span");  
+               span.setAttribute("style","display:contents")
+               let aleermenos=(element.parentNode).querySelector(".leermenos");
+               aleermenos.setAttribute("style","display:contents")
           }
      })
 }
+// evento de "leer menos" dentro de las tarjetas muestra menor contenido
 function eventLeerMenos(){
      const leerMenosall=document.querySelectorAll(".leermenos");
      leerMenosall.forEach(element => {
           element.addEventListener("click",clickLeerMenos);
           function clickLeerMenos(e){
                e.preventDefault();
-               // oculta el boton del evento (a)
                element.setAttribute("style","display:none"); 
-               // selecciona el span (en span)
                let span=(element.parentNode).querySelector("span");   
                span.setAttribute("style","display:none")     
-               // selecciona leer menos (aleermenos)
                let leermas=(element.parentNode).querySelector(".leermas");
                leermas.setAttribute("style","display:contents")     
           }
@@ -73,6 +61,7 @@ fetch('/bdata/bdata.json')
                `
           }
 })
+//una vez que el dom esté cargado realiza estas acciones
 document.onreadystatechange = () => {
      document.onreadystatechange = () => {
           if (document.readyState === 'complete') {
@@ -94,7 +83,7 @@ function existe(productoEnviar){
      console.log("no existe");
      return false;
 }
-//SI el articulo NO ESTÁ en ventas, lo agrega al arreglo VENTAS y lo agrega al LOCALSTORAGE
+//SI el articulo NO ESTÁ en ventas, lo agrega a VENTAS y en LS + animación + actualiza testigo
 function enviaLocalStorage (articulo){
      if (existe(articulo)==false){
           arrayVentas.push(articulo);
@@ -113,7 +102,7 @@ function enviaLocalStorage (articulo){
           actualizaTestigoCarrito();
      }
 }
-//si el local storage está vacio asigna [] al arreglo ventas, sino pone el LOCALSTORAGE en arrayVentas
+//si el local storage está vacio asigna [] a ventas, sino vuelca LS en arrayVentas
 function verificaLS(){
      if (localStorage.getItem("carrito")===null) {
           arrayVentas=[];
@@ -126,8 +115,7 @@ function verificaLS(){
 contentProducts.addEventListener('click',agregaCarrito)
 function agregaCarrito (e){
      e.preventDefault();
-     // console.log(e.srcElement.classList[1]);
-     //para no generar otro evento, tomo la consulta al dom que ya hice y separo el botón de la tarjeta
+     //separo el botón de la tarjeta
      if (e.srcElement.classList[0]==='btn' && e.srcElement.classList[1]==='btn-dark'){
           const carta = e.target.parentNode.parentNode;
           const dataCarta = e.target.parentNode;
@@ -136,7 +124,6 @@ function agregaCarrito (e){
           verificaLS();
           enviaLocalStorage(articulo);
           insertarDOMcarrito();
-          // actualizaTestigoCarrito();
      }
 }
 
@@ -152,7 +139,7 @@ function vaciarDOMcarrito(e){
      localStorage.clear();
      actualizaTestigoCarrito();
 }
-//genera el evento del [botón] SIGUIENTE
+//genera el evento del [botón] SIGUIENTE y redirecciona 
 let botonSiguiente = document.querySelector('#botonSiguiente');
 botonSiguiente.addEventListener('click',()=>{
      if (arrayVentas.length!=0){
@@ -216,12 +203,37 @@ function insertarDOMcarrito(){
      `
      muestraCarrito.appendChild(div);
 }
-verificaLS();
-
 // al comenzar, si el arreglo arrayVentas NO está vacío NI es nulo, inserta las ventas al DOM
+verificaLS();
 if (arrayVentas.length !=null || arrayVentas.length != 0){
      insertarDOMcarrito();
      actualizaTestigoCarrito();
+}
+//-- testigo carrito de compra
+// si se está utilizando "carrito" en el LS calcula las cantidades y lo 
+// envia por parametro a muestraTestigoCarrito
+function actualizaTestigoCarrito(){
+     if (localStorage.getItem('carrito')){
+          ventas=JSON.parse(localStorage.getItem('carrito'));
+          let aux=0;
+          ventas.forEach(element => {
+               aux+=element.cant;
+          })
+          muestraTestigoCarrito(aux);
+     } else {
+          let aux=0;
+          muestraTestigoCarrito(aux);
+     }
+}
+// muestra el testigo
+function muestraTestigoCarrito(aux){
+     const iconCarrito=document.querySelector('.icon-carrito');
+     const etiquetaP=iconCarrito.getElementsByTagName('p')[0];
+     if (aux<=9){
+          etiquetaP.innerHTML=`0${aux}`
+     } else {
+          etiquetaP.innerHTML=`${aux}`
+     }
 }
 
 // ajax dolar
@@ -259,30 +271,5 @@ function mostrarDolar(nombre,precio){
      } else {
           let blue=document.querySelector('.precio_blue')
           blue.innerHTML=`<b class="precio_blue">${nombre}: ${precio}</b>`
-     }
-}
-// testigo carrito de compra
-function muestraTestigoCarrito(aux){
-     const iconCarrito=document.querySelector('.icon-carrito');
-     const etiquetaP=iconCarrito.getElementsByTagName('p')[0];
-     if (aux<=9){
-          etiquetaP.innerHTML=`0${aux}`
-     } else {
-          etiquetaP.innerHTML=`${aux}`
-     }
-}
-
-function actualizaTestigoCarrito(){
-     if (localStorage.getItem('carrito')){
-          muestraTestigoCarrito();
-          ventas=JSON.parse(localStorage.getItem('carrito'));
-          let aux=0;
-          ventas.forEach(element => {
-               aux+=element.cant;
-          })
-          muestraTestigoCarrito(aux);
-     } else {
-          let aux=0;
-          muestraTestigoCarrito(aux);
      }
 }
