@@ -1,4 +1,4 @@
-// evento de "leer más" dentro de las tarjetas muestra mayor contenido
+// evento de "leer más" dentro de los productos -> muestrá más contenido
 function eventLeerMas(){
      const leerMasAll=document.querySelectorAll(".leermas");
      leerMasAll.forEach(element => {
@@ -14,7 +14,7 @@ function eventLeerMas(){
      })
 }
 
-// evento de "leer menos" dentro de las tarjetas muestra menos contenido
+// evento de "leer menos" dentro de los productos -> saca contenido
 function eventLeerMenos(){
      const leerMenosall=document.querySelectorAll(".leermenos");
      leerMenosall.forEach(element => {
@@ -31,6 +31,7 @@ function eventLeerMenos(){
      }
 )}
 
+// arquitectura de los productos
 let arrayVentas;
 class Articulos{
      constructor(titulo,imagen,precio,cant){
@@ -40,8 +41,9 @@ class Articulos{
           this.cant=cant;
      }
  }
+
 let contentProducts = document.querySelector('.content-productos')
-// se ingresan al html productos, todos los elementos que están en bddata.json
+// se ingresan al html productos. Elementos que están en bddata.json
 fetch('/bdata/bdata.json')
      .then (response => response.json())
      .then (data => {
@@ -86,7 +88,7 @@ function existe(productoEnviar){
      return false;
 }
 
-//SI el articulo NO ESTÁ en ventas, lo agrega a VENTAS y en LS + animación + actualiza testigo
+//SI el articulo NO ESTÁ en ventas[], lo agrega a VENTAS[] y en LS + animación + actualiza testigo
 function enviaLocalStorage (articulo){
      if (existe(articulo)==false){
           arrayVentas.push(articulo);
@@ -95,17 +97,16 @@ function enviaLocalStorage (articulo){
           Swal.fire({
                position: 'top-end',
                width: 300,
-               // height: 200,
                title: `${articulo.titulo}`,
                text: "Añadido al carrito",
                icon: "success",
-               // buttons: false,
                timer: 1500,
           });
           actualizaTestigoCarrito();
      }
 }
-//si el local storage está vacio asigna [] a ventas, sino vuelca LS en arrayVentas
+
+//si el local storage está vacio asigna ventas[], sino vuelca LS en arrayVentas[]
 function verificaLS(){
      if (localStorage.getItem("carrito")===null) {
           arrayVentas=[];
@@ -118,7 +119,6 @@ function verificaLS(){
 contentProducts.addEventListener('click',agregaCarrito)
 function agregaCarrito (e){
      e.preventDefault();
-     //separo el botón de la tarjeta
      if (e.srcElement.classList[0]==='btn' && e.srcElement.classList[1]==='btn-dark'){
           const carta = e.target.parentNode.parentNode;
           const dataCarta = e.target.parentNode;
@@ -142,10 +142,12 @@ function vaciarDOMcarrito(e){
      localStorage.clear();
      actualizaTestigoCarrito();
 }
-//genera el evento del [botón] SIGUIENTE y redirecciona 
+
+//crea el evento del botón [SIGUIENTE] y redirecciona al carrito
 let botonSiguiente = document.querySelector('#botonSiguiente');
 botonSiguiente.addEventListener('click',()=>{
-     if (arrayVentas.length!=0){
+     // if (arrayVentas.length!=0){
+     if (localStorage!=null && localStorage.length!=0){
           Swal.fire({
                title: "La compra a sido cargada",
                text: "redireccionando...",
@@ -155,7 +157,7 @@ botonSiguiente.addEventListener('click',()=>{
           });
           setTimeout(()=>{
                window.location.href = "./carrito.html#main-carrito";
-          },5000);
+          },2500);
      } else {
           Swal.fire({
                title: "Error al cargar la compra",
@@ -167,7 +169,7 @@ botonSiguiente.addEventListener('click',()=>{
      }
 })
 
-//vacía el DOM del carrito para imprimir nuevamente el carrito
+//vacía el DOM para luego volcar los productos.
 function vaciarDOMcarrito2(){
      let muestraCarrito = document.querySelector('.muestraCarrito');
      while(muestraCarrito.firstChild){
@@ -183,6 +185,7 @@ function calculaMonto(ventas){
      });
      return acum;
 }
+
 // luego de hacer click en [agregar al carrito] inserta todas las ventas del arreglo al DOM
 function insertarDOMcarrito(){
      let muestraCarrito= document.querySelector('.muestraCarrito');
@@ -196,12 +199,14 @@ function insertarDOMcarrito(){
           muestraCarrito.appendChild(div);
      }
 }
+
 // al comenzar, si el arreglo arrayVentas NO está vacío NI es nulo, inserta las ventas al DOM
 verificaLS();
 if (arrayVentas.length !=null || arrayVentas.length != 0){
      insertarDOMcarrito();
      actualizaTestigoCarrito();
 }
+
 //-- testigo carrito de compra
 // si se está utilizando "carrito" en el LS calcula las cantidades y lo 
 // envia por parametro a muestraTestigoCarrito
@@ -218,10 +223,12 @@ function actualizaTestigoCarrito(){
           muestraTestigoCarrito(aux);
      }
 }
-// muestra el testigo
+
+// muestra el testigo (cantidad)
 function muestraTestigoCarrito(aux){
      const iconCarrito=document.querySelector('.icon-carrito');
      const etiquetaP=iconCarrito.getElementsByTagName('p')[0];
+     // si es menor a 9 agrega 0 adelante para que sea más estético (E: 04 06)
      if (aux<=9){
           etiquetaP.innerHTML=`0${aux}`
      } else {
@@ -229,7 +236,7 @@ function muestraTestigoCarrito(aux){
      }
 }
 
-// ajax dolar
+// ----------------------- ajax dolar
 let btnDolar=document.querySelector('#dolar');
 btnDolar.addEventListener('click',()=>{
      obtenerDatos();
@@ -247,7 +254,8 @@ function obtenerDatos(){
           }
      }
 }
-//Toma los valores de dolar blue y oficial del json
+
+// Toma los valores de dolar blue y oficial del json
 function oficial(datajson){
      datajson.forEach(element => {
           if (element.casa.nombre=='Dolar Oficial' || element.casa.nombre=='Dolar Blue'){
@@ -255,7 +263,8 @@ function oficial(datajson){
           }
      });
 }
-//hubica y muestra el dolar
+
+// ubica y muestra el dolar
 function mostrarDolar(nombre,precio){
      let section=document.querySelector('.section')
      if (nombre=='Dolar Oficial'){

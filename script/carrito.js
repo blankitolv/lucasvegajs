@@ -3,15 +3,14 @@ document.onreadystatechange = () => {
      eventInputCantidad();
      enviar.addEventListener('click',validacion)
 }
+
 //si el LS no está vacío ni su tamaño es igual a 0
 if (localStorage!=null && localStorage.length!=0){
-     console.log('pasa por aca');
      console.log(localStorage.length);
      let arrayVentas=JSON.parse(localStorage.getItem('carrito'));
      //muestra las ventas
      muestraCliente(arrayVentas);
 } else {
-     console.log('pasa por aca abajo');
      verificaDOM();
 }
 
@@ -43,6 +42,8 @@ function muestraCliente(ventas){
      });
      actualizaMonto();
 }
+
+//cuando elimina un producto, arma otro array salteando ese articulo y lo cologa en LS
 function actualizarLS(nombre){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      const ventasActualizadas=[];
@@ -55,6 +56,7 @@ function actualizarLS(nombre){
      //actualiza el monto
      actualizaMonto();
 }
+
 //(1) se recibe como parametro el NOMBRE del articulo seleccionado (unProducto / string)
 //(2) se recibe todos los productos mostrados en el dom (listaProductos / HTML collections)
 function borrarItem(unProducto,listaProductos){
@@ -67,6 +69,7 @@ function borrarItem(unProducto,listaProductos){
      actualizarLS(unProducto);
      verificaDOM();
 }
+
 //evento de borrar/eliminar articulo
 function eventBorrar(){
      if (document.readyState === 'complete') {
@@ -81,6 +84,7 @@ function eventBorrar(){
           });
      }
 }
+
 //crea evento de un input de cantidad y toma el valor
 function eventInputCantidad(){
      let inputcantidad=document.querySelectorAll('.producto input')
@@ -107,7 +111,7 @@ function enviarCantidad(cantidad, nombre){
      actualizaMonto();
 }
 
-//cantidad de productos
+//monto de los articulos comprados
 function actualizaMonto(){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      let aux=0;
@@ -119,43 +123,50 @@ function actualizaMonto(){
      etiquetaPrecio.setAttribute("style","font-size:20px");
 }
 
-// formulario de carrito
+// formulario del carrito
 function verificaEmail (correo){
-     // if (JSON.parse(localStorage.getItem('carrito')).length!=0){
      if (JSON.parse(localStorage.getItem('carrito'))){
           let arroba=correo.indexOf('@');
           let dotcom=correo.indexOf('.');
           if (arroba!=-1 && dotcom!=-1) {
-               swal("compra cargada, direccionando...", {
+               // compra finalizada correctamente
+               Swal.fire("compra cargada, direccionando...", {
+                    icon: "success",
                     button: false,
                     timer: 3000,
-                  });
+                    backdrop: `rgba(253, 255, 150, 0.100)`,
+               },2000);
                     window.location.href = "./success.html";
                     //una vez finalizada exitosamente la venta, limpia el LS
                     localStorage.clear();
           } else {
                //error alerta por email válido
-               swal({
+               Swal.fire({
                     title: "Error",
+                    backdrop: 'rgba(253, 255, 150, 0.9)',
                     text: "Ingrese un email válido",
                     icon: "error",
                });
           }
      } else {
           //error alerta por carrito vacío
-          swal({
+          Swal.fire({
                title: "Ojo!",
                text: "Su carrito de compras está vacío",
                icon: "warning",
+               backdrop: `rgba(253, 255, 150, 0.100)`,
+               footer: '<a href="./productos.html#cant-articulos">VER PRODUCTOS DISPONIBLES</a>',
+
           });
      }
 
 }
+
 // crea el evento del botón [realizar compra]
-     function validacion(e) {
-          e.preventDefault();
-          validacionDatos();
-     }
+function validacion(e) {
+     e.preventDefault();
+     validacionDatos();
+}
 const nombreCompleto=document.querySelector('#nombreCompleto');
 const empresa=document.querySelector('#empresa');
 const telefono=document.querySelector('#telefono');
@@ -168,6 +179,7 @@ function validacionDatos(){
      if (nombreCompleto.value!='' && empresa.value!='' && telefono.value!='' && correo.value!='' && localidad.placeholder.value!='Localidad' && direccion.value!='') {
           verificaEmail(correo.value);
      } else {
+          // si no están todos los campos "completos" muestra error
           swal({
                title: "Error",
                text: "Complete los campos requeridos",
@@ -175,6 +187,7 @@ function validacionDatos(){
           });
      }
 }
+
 // animación jquery botón [enviar]
 $(()=>{
      	// mouseleave
