@@ -99,7 +99,7 @@ function eventInputCantidad(){
      });
 }
 
-// con el nombre (param) ubica el producto y modifica la cantidad de ese producto.
+// con el nombre (parametro) ubica el producto y modifica la cantidad de ese producto.
 function enviarCantidad(cantidad, nombre){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      ventas.forEach(element => {
@@ -111,7 +111,7 @@ function enviarCantidad(cantidad, nombre){
      actualizaMonto();
 }
 
-//monto de los articulos comprados
+//valor de los articulos a comprar
 function actualizaMonto(){
      ventas=JSON.parse(localStorage.getItem('carrito'));
      let aux=0;
@@ -190,7 +190,6 @@ function validacionDatos(){
 
 // animación jquery botón [enviar]
 $(()=>{
-     	// mouseleave
      $('#enviar').on( "mouseenter", function(){
           $(this).css({
                'transition':'1s',

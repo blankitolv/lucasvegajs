@@ -43,7 +43,7 @@ class Articulos{
  }
 
 let contentProducts = document.querySelector('.content-productos')
-// se ingresan al html productos. Elementos que están en bddata.json
+// se ingresan al html los productos. Elementos que están en bddata.json
 fetch('/bdata/bdata.json')
      .then (response => response.json())
      .then (data => {
