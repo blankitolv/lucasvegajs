@@ -20,6 +20,8 @@
 	<link rel="shortcut icon" href="../images/icon/book-solid.svg">
 	<!-- iconos google fuente -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<!-- cdn jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="fixed-carrito">
@@ -80,7 +82,10 @@
 						<input type="email" name="correo" id="correo" size="30px" placeholder="Correo electronico">
 						<input type="text" name="localidad" id="localidad" size="30px" placeholder="Localidad">
 						<input type="text" name="direccion" id="direccion" size="30px" placeholder="Dirección">
-						<input type="submit" name="enviar" value="enviar" id="enviar">
+						<label >
+							<span class="material-icons-outlined">shopping_cart</span>
+							<input type="submit" name="enviar" value="realizar pedido" id="enviar">
+						</label>
 						<textarea name="notas" id="notas" cols="31" rows="10" placeholder="Añadir aclaraciones"></textarea>
 					</form>
 				</div>

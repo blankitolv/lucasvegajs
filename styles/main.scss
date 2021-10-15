@@ -115,35 +115,6 @@ body {
         }
     }
 }
-.header-carrito {
-    .productosDesc{
-        width: 80%;
-        min-height: 70vh;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        .producto{
-            width: 100%;
-            margin: 15px 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            img {
-                margin-right: 10px;
-            }
-            p {
-                margin-right: 10px;
-            }
-            .deleteItem {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-            }
-        
-        }
-    }
-}
 .card-body {
     .card-text{
         .leermas{

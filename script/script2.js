@@ -13,11 +13,13 @@ function eventLeerMas(){
           }
      })
 }
-// evento de "leer menos" dentro de las tarjetas muestra menor contenido
+
+// evento de "leer menos" dentro de las tarjetas muestra menos contenido
 function eventLeerMenos(){
      const leerMenosall=document.querySelectorAll(".leermenos");
      leerMenosall.forEach(element => {
           element.addEventListener("click",clickLeerMenos);
+
           function clickLeerMenos(e){
                e.preventDefault();
                element.setAttribute("style","display:none"); 
@@ -28,6 +30,7 @@ function eventLeerMenos(){
           }
      }
 )}
+
 let arrayVentas;
 class Articulos{
      constructor(titulo,imagen,precio,cant){
@@ -61,6 +64,7 @@ fetch('/bdata/bdata.json')
                `
           }
 })
+
 //una vez que el dom esté cargado realiza estas acciones
 document.onreadystatechange = () => {
      document.onreadystatechange = () => {
@@ -71,16 +75,17 @@ document.onreadystatechange = () => {
           }
      };
 };
+
 //pregunta si el producto ya existe en el arreglo VENTAS
 function existe(productoEnviar){
      for (let i=0;i<=arrayVentas.length-1;i++){
           if (arrayVentas[i].titulo===productoEnviar.titulo){
-               console.log("existe");
                return true;
           }
      }
      return false;
 }
+
 //SI el articulo NO ESTÁ en ventas, lo agrega a VENTAS y en LS + animación + actualiza testigo
 function enviaLocalStorage (articulo){
      if (existe(articulo)==false){
@@ -150,11 +155,11 @@ botonSiguiente.addEventListener('click',()=>{
           });
           setTimeout(()=>{
                window.location.href = "./carrito.html#main-carrito";
-          },2000);
+          },5000);
      } else {
           Swal.fire({
                title: "Error al cargar la compra",
-               text: "... 404",
+               text: "su carrito se encuentra vaío",
                icon: "info",
                buttons: false,
                timer: 3000,
@@ -188,18 +193,8 @@ function insertarDOMcarrito(){
           <img src="${arrayVentas[i].imagen}" width=100>
           <h6>${arrayVentas[i].titulo}</h6>
           `
-          // <p>$${arrayVentas[i].precio}</p>
           muestraCarrito.appendChild(div);
      }
-     // let monto=calculaMonto(arrayVentas)
-     // div=document.createElement('div');
-     // div.innerHTML+=`
-     // <hr>
-     // <p>Monto Actual</p>
-     // <hr>
-     // <p>$${monto}</p>
-     // `
-     // muestraCarrito.appendChild(div);
 }
 // al comenzar, si el arreglo arrayVentas NO está vacío NI es nulo, inserta las ventas al DOM
 verificaLS();

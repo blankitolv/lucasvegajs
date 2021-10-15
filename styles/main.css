@@ -3185,7 +3185,7 @@ header nav #check {
 .main-carrito .container-carrito .izquierda-derecha .izquierda-carrito #formCarrito input[type=submit] {
   width: 200px;
   text-align: center;
-  background-color: rgba(50, 70, 94, 0.65);
+  background-color: rgba(48, 131, 48, 0.856);
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.781);
   letter-spacing: 1px;
@@ -3193,6 +3193,15 @@ header nav #check {
   border-radius: 5px;
   border-bottom: 1px white;
   padding: auto;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .izquierda-carrito #formCarrito span {
+  position: relative;
+  top: 8px;
+  left: 53%;
+  color: white;
+  z-index: 20;
+  font-weight: 200;
 }
 
 .main-carrito .container-carrito .izquierda-derecha .izquierda-carrito #formCarrito textarea {
@@ -3212,6 +3221,7 @@ header nav #check {
 }
 
 .main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito {
+  margin-bottom: 50px;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3254,6 +3264,67 @@ header nav #check {
 
 .main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .hrcarrito {
   border-top: 2px solid white;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc {
+  width: 95%;
+  min-height: 70vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto {
+  width: 100%;
+  margin: 15px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto img {
+  margin-right: 10px;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto p {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto input[type=number] {
+  margin-bottom: 10px;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto button {
+  margin-bottom: 10px;
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto:nth-child(2n+1) {
+  background-color: rgba(255, 248, 220, 0.13);
+}
+
+.main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito .productosDesc .producto .deleteItem {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .main-carrito .container-carrito .izquierda-derecha .derecha-carrito .header-carrito #divtotal {
@@ -3450,50 +3521,6 @@ body .fixed-carrito .bkg-carrito:hover {
 
 .container .section #dolar {
   display: block;
-}
-
-.header-carrito .productosDesc {
-  width: 80%;
-  min-height: 70vh;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.header-carrito .productosDesc .producto {
-  width: 100%;
-  margin: 15px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.header-carrito .productosDesc .producto img {
-  margin-right: 10px;
-}
-
-.header-carrito .productosDesc .producto p {
-  margin-right: 10px;
-}
-
-.header-carrito .productosDesc .producto .deleteItem {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
 }
 
 .card-body .card-text .leermas {
